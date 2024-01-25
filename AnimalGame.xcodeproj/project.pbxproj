@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18FECEC82B60FC38001B566F /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FECEC72B60FC38001B566F /* AnimalsModel.swift */; };
+		18FECEDC2B62584E001B566F /* AnimalFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FECEDB2B62584E001B566F /* AnimalFactView.swift */; };
 		29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5589B2B623DBF001FC793 /* QuizView.swift */; };
 		EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */; };
 		EE122E512B5F9C70009FAACD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E502B5F9C70009FAACD /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		18FECEC72B60FC38001B566F /* AnimalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
+		18FECEDB2B62584E001B566F /* AnimalFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFactView.swift; sourceTree = "<group>"; };
 		29F5589B2B623DBF001FC793 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
 		EE122E4B2B5F9C70009FAACD /* AnimalGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGameApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */,
 				EE122E502B5F9C70009FAACD /* ContentView.swift */,
 				18FECEC72B60FC38001B566F /* AnimalsModel.swift */,
+				18FECEDB2B62584E001B566F /* AnimalFactView.swift */,
 				EE122E522B5F9C71009FAACD /* Assets.xcassets */,
 				EE122E542B5F9C71009FAACD /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */,
 				18FECEC82B60FC38001B566F /* AnimalsModel.swift in Sources */,
 				EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */,
+				18FECEDC2B62584E001B566F /* AnimalFactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
