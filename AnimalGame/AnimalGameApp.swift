@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct AnimalGameApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        WindowGroup { 
+            SplashView()
+        }.modelContainer(for: [Kid_animal.self])
     }
 }
