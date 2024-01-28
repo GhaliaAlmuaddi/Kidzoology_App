@@ -9,9 +9,10 @@ import SwiftUI
 
 struct MapView: View {
     
-    @AppStorage("Kid_image") var currentImage: String = ""
+ 
 
-    
+   @AppStorage("imageKid") var currentImage: String = ""
+
     
     var body: some View {
       //  let Images = CurrentImageSelection2
@@ -22,12 +23,11 @@ struct MapView: View {
             
          // Text("Welcome \(currentImage)") //
 
-           // Text(Currentname)
-           Image(currentImage)
-          .resizable()
-      .aspectRatio(contentMode: .fill)
-           .frame(width: 98, height: 137)
-          .clipped()
+         Image(currentImage+"1")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 139, height: 174)
+                .clipped()
         }
     }
 }

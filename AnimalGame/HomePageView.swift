@@ -53,6 +53,8 @@ struct HomePageView: View {
                         
                     }.padding()
                     
+                }
+                    
                     Text("             ") //Here
                     
                     
@@ -60,7 +62,7 @@ struct HomePageView: View {
                     NavigationLink {
                         
                        //MyZoo view (Rahaf)
-                        sucessMassage()
+                        RahafView()
                         
                     }
                     
@@ -90,11 +92,11 @@ struct HomePageView: View {
                 }.padding()
                 }.padding()
                 
-            }.padding()
+            }
 
         }
 
-    }}
+    }
 #Preview {
     HomePageView()
 }
