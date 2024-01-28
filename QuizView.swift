@@ -23,7 +23,7 @@ struct QuizView: View {
             ZStack{
                 Color("backgroundColor")
                     .ignoresSafeArea()
-                VStack(spacing:40){
+                VStack(spacing:10){
                     ZStack{
                         Rectangle()
                             .foregroundColor(.clear)
@@ -56,7 +56,7 @@ struct QuizView: View {
                         }
                     }
                     
-                    
+                    Spacer()
                     
                     VStack(spacing:20){
                         ZStack{
