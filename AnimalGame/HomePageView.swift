@@ -60,6 +60,7 @@ struct HomePageView: View {
                     NavigationLink {
                         
                        //MyZoo view (Rahaf)
+                        sucessMassage()
                         
                     }
                     

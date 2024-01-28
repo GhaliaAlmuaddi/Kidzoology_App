@@ -10,122 +10,125 @@ import SwiftUI
 import SwiftUI
 
 struct AnimalFactView: View {
-    
-    
+    let animals: [Animals] = [camel,horse,sheep, cow,gazelle, wolf,dog,pigeon,hawk, cat,sparrows, snake, scorpion,lizard]
+    let animalinfo: Animals
     var body: some View {
         ZStack{
-        Color("backgroundColor").ignoresSafeArea()
+            Color("backgroundColor").ignoresSafeArea()
             
-                Rectangle()
-                    .frame(width: 1116 , height: 530)
-                    .cornerRadius(30)
-                    .foregroundColor(.lightBackground)
-                
+            Rectangle()
+                .frame(width: 1116 , height: 530)
+                .cornerRadius(30)
+                .foregroundColor(.lightBackground)
             
             
-            HStack{
-                VStack{
-                    Text(camel.animalName)
-                        .font(.system(size: 95)).bold()
-                        .foregroundColor(.brownText)
-                    Text(camel.fact)
-                        .font(.system(size: 25))
-                        .foregroundColor(.brownText)
-                    Image(camel.animalImage)
-                        .resizable()
-                        .frame(width: 400 , height: 400)
+            ForEach(animals) { animal in
+                if(animal.animalName == animalinfo.animalName){
                     
-                }.frame(width: 500, height: 800 , alignment: .bottomLeading)
-                
-                VStack{
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 567 , height: 104)
-                            .cornerRadius(15)
-                            .foregroundColor(.lightYellow)
-                        HStack{
-                            Image("animalType")
-                                .resizable()
-                                .frame(width: 55 , height: 55)
-                            Text("Type:")
-                                .font(.system(size: 40)).bold()
-                                .foregroundColor(.brownText)
-                        }.frame(width: 555 , height: 104, alignment: .leading)
+                    HStack{
+                    VStack{
+                        Text(animal.animalName)
+                            .font(.system(size: 95)).bold()
+                            .foregroundColor(.brownText)
+                        Text(animal.fact)
+                            .font(.system(size: 25))
+                            .foregroundColor(.brownText)
+                        Image(animal.animalImage)
+                            .resizable()
+                            .frame(width: 400 , height: 400)
                         
-                            Text(camel.type)
+                    }.frame(width: 500, height: 800 , alignment: .bottomLeading)
+                    
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 567 , height: 104)
+                                .cornerRadius(15)
+                                .foregroundColor(.lightYellow)
+                            HStack{
+                                Image("animalType")
+                                    .resizable()
+                                    .frame(width: 55 , height: 55)
+                                Text("Type:")
+                                    .font(.system(size: 40)).bold()
+                                    .foregroundColor(.brownText)
+                            }.frame(width: 555 , height: 104, alignment: .leading)
+                            
+                            Text(animal.type)
                                 .font(.system(size: 30))
                                 .foregroundColor(.brownText)
                                 .frame(width: 500 , height: 104, alignment: .trailing)
                             
+                            
+                        }
                         
-                    }
-                    
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 567 , height: 104)
-                            .cornerRadius(15)
-                            .foregroundColor(.lightGreen)
-                        
-                        HStack{
-                            Image("animalFood")
-                                .resizable()
-                                .frame(width: 55 , height: 55)
-                            Text("Diet:")
-                                .font(.system(size: 40)).bold()
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 567 , height: 104)
+                                .cornerRadius(15)
+                                .foregroundColor(.lightGreen)
+                            
+                            HStack{
+                                Image("animalFood")
+                                    .resizable()
+                                    .frame(width: 55 , height: 55)
+                                Text("Diet:")
+                                    .font(.system(size: 40)).bold()
+                                    .foregroundColor(.brownText)
+                            }.frame(width: 555 , height: 104, alignment: .leading)
+                            
+                            Text(animal.diet)
+                                .font(.system(size: 30))
                                 .foregroundColor(.brownText)
-                        }.frame(width: 555 , height: 104, alignment: .leading)
+                                .frame(width: 500 , height: 104, alignment: .trailing)
+                        }
                         
-                        Text(camel.diet)
-                            .font(.system(size: 30))
-                            .foregroundColor(.brownText)
-                            .frame(width: 500 , height: 104, alignment: .trailing)
-                    }
-                    
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 567 , height: 104)
-                            .cornerRadius(15)
-                            .foregroundColor(.lightBlue)
-                        
-                        HStack{
-                            Image("animalHabitat")
-                                .resizable()
-                                .frame(width: 55 , height: 55)
-                            Text("Habitat:")
-                                .font(.system(size: 40)).bold()
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 567 , height: 104)
+                                .cornerRadius(15)
+                                .foregroundColor(.lightBlue)
+                            
+                            HStack{
+                                Image("animalHabitat")
+                                    .resizable()
+                                    .frame(width: 55 , height: 55)
+                                Text("Habitat:")
+                                    .font(.system(size: 40)).bold()
+                                    .foregroundColor(.brownText)
+                            }.frame(width: 555 , height: 104, alignment: .leading)
+                            
+                            Text(animal.habitat)
+                                .font(.system(size: 30))
                                 .foregroundColor(.brownText)
-                        }.frame(width: 555 , height: 104, alignment: .leading)
+                                .frame(width: 500 , height: 104, alignment: .trailing)
+                        }
                         
-                        Text(camel.habitat)
-                            .font(.system(size: 30))
-                            .foregroundColor(.brownText)
-                            .frame(width: 500 , height: 104, alignment: .trailing)
-                    }
-                    
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 567 , height: 104)
-                            .cornerRadius(15)
-                            .foregroundColor(.lightOrange)
-                        
-                        HStack{
-                            Image("animalSkin")
-                                .resizable()
-                                .frame(width: 55 , height: 55)
-                            Text("Skin:")
-                                .font(.system(size: 40)).bold()
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 567 , height: 104)
+                                .cornerRadius(15)
+                                .foregroundColor(.lightOrange)
+                            
+                            HStack{
+                                Image("animalSkin")
+                                    .resizable()
+                                    .frame(width: 55 , height: 55)
+                                Text("Skin:")
+                                    .font(.system(size: 40)).bold()
+                                    .foregroundColor(.brownText)
+                            }.frame(width: 555 , height: 104, alignment: .leading)
+                            
+                            Text(animal.skinCover)
+                                .font(.system(size: 30))
                                 .foregroundColor(.brownText)
-                        }.frame(width: 555 , height: 104, alignment: .leading)
-                        
-                        Text(camel.skinCover)
-                            .font(.system(size: 30))
-                            .foregroundColor(.brownText)
-                            .frame(width: 500 , height: 104, alignment: .trailing)
-                    }
-                }//.frame(width: 1070 , alignment: .trailing)
-            
+                                .frame(width: 500 , height: 104, alignment: .trailing)
+                        }
+                    }//.frame(width: 1070 , alignment: .trailing)
+                    
+                }
             }
-            
+        }
             ZStack{
                 Rectangle()
                     .foregroundColor(.clear)
@@ -178,6 +181,6 @@ struct AnimalFactView: View {
 
 
 #Preview {
-    AnimalFactView()
+    AnimalFactView(animalinfo: camel)
 }
 
