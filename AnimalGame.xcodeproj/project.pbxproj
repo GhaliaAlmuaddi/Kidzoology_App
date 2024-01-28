@@ -10,6 +10,8 @@
 		18FECEC82B60FC38001B566F /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FECEC72B60FC38001B566F /* AnimalsModel.swift */; };
 		18FECEDC2B62584E001B566F /* AnimalFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FECEDB2B62584E001B566F /* AnimalFactView.swift */; };
 		29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5589B2B623DBF001FC793 /* QuizView.swift */; };
+		39CCBB642B66225300CE544C /* animalListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCBB632B66225300CE544C /* animalListCard.swift */; };
+		39CCBB662B66229500CE544C /* animalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCBB652B66229500CE544C /* animalsList.swift */; };
 		90BC255C2B652F3F0069186A /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255B2B652F3F0069186A /* CharactersView.swift */; };
 		90BC255E2B652F7E0069186A /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255D2B652F7E0069186A /* NameView.swift */; };
 		90BC25602B652FC60069186A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255F2B652FC60069186A /* HomePageView.swift */; };
@@ -28,6 +30,8 @@
 		18FECEC72B60FC38001B566F /* AnimalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
 		18FECEDB2B62584E001B566F /* AnimalFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFactView.swift; sourceTree = "<group>"; };
 		29F5589B2B623DBF001FC793 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
+		39CCBB632B66225300CE544C /* animalListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalListCard.swift; sourceTree = "<group>"; };
+		39CCBB652B66229500CE544C /* animalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsList.swift; sourceTree = "<group>"; };
 		90BC255B2B652F3F0069186A /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		90BC255D2B652F7E0069186A /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		90BC255F2B652FC60069186A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				29F5589B2B623DBF001FC793 /* QuizView.swift */,
+				39CCBB632B66225300CE544C /* animalListCard.swift */,
+				39CCBB652B66229500CE544C /* animalsList.swift */,
 				EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */,
 				90BC25692B6532030069186A /* SplashView.swift */,
 				EE122E502B5F9C70009FAACD /* ContentView.swift */,
@@ -171,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE122E512B5F9C70009FAACD /* ContentView.swift in Sources */,
+				39CCBB642B66225300CE544C /* animalListCard.swift in Sources */,
 				29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */,
 				90BC25642B6530C90069186A /* ShomukhView.swift in Sources */,
 				90BC25682B65317F0069186A /* Model.swift in Sources */,
@@ -180,6 +187,7 @@
 				EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */,
 				90BC256A2B6532030069186A /* SplashView.swift in Sources */,
 				90BC25662B65314D0069186A /* RahafView.swift in Sources */,
+				39CCBB662B66229500CE544C /* animalsList.swift in Sources */,
 				90BC25602B652FC60069186A /* HomePageView.swift in Sources */,
 				90BC25622B65301C0069186A /* MapView.swift in Sources */,
 				18FECEDC2B62584E001B566F /* AnimalFactView.swift in Sources */,

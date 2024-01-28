@@ -9,7 +9,17 @@ import SwiftUI
 
 struct animalListCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Rectangle()
+            .foregroundColor(.white)
+            .frame(width: 150, height: 216)
+            .background(.white)
+
+            .cornerRadius(30)
+            .shadow(color: .black.opacity(0.33), radius: 2, x: 0, y: 10)
+            
+
+        }
     }
 }
 
