@@ -14,8 +14,8 @@ struct QuizView: View {
     @State  var isButtonClicked3 = false
     @State  var selectedAnswer1 = ""
     @State  var selectedAnswer2 = ""
-    @State var correctAnswer1 = camel.answer1
-    @State var correctAnswer2 = camel.answer2
+//    @State var correctAnswer1 = camel.answer1
+//    @State var correctAnswer2 = camel.answer2
     @State var submit = false
     @State var navigate = false
     let selectedAnimal: Animals
@@ -70,7 +70,7 @@ struct QuizView: View {
                                 .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                                 .cornerRadius(30)
                             VStack(spacing:50){
-                                Text(camel.ques1)
+                                Text(selectedAnimal.ques1)
                                     .font(Font.system(size: 35))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
@@ -81,7 +81,7 @@ struct QuizView: View {
                                     Button {
                                     action:
                                         do {self.isButtonClicked.toggle()
-                                            selectedAnswer1 = camel.choices1[0]
+                                            selectedAnswer1 = selectedAnimal.choices1[0]
                                         }
                                         if self.isButtonClicked1 == true{
                                             self.isButtonClicked1.toggle()
@@ -102,7 +102,7 @@ struct QuizView: View {
                                                         .inset(by: 2.5)
                                                     
                                                         .stroke(
-                                                            (submit && isButtonClicked && selectedAnswer1 == correctAnswer1) ? Color.green : // If both conditions are true
+                                                            (submit && isButtonClicked && selectedAnswer1 == selectedAnimal.answer1) ? Color.green : // If both conditions are true
                                                             (submit && isButtonClicked ? Color.red : // If only isButtonClicked is true
                                                              isButtonClicked ? Color.brown :
                                                                 Color(red: 1, green: 0.96, blue: 0.81)), // If isButtonClicked is false
@@ -110,14 +110,14 @@ struct QuizView: View {
                                                         )
                                                     
                                                 )
-                                            if submit && isButtonClicked && selectedAnswer1 == correctAnswer1 {
+                                            if submit && isButtonClicked && selectedAnswer1 == selectedAnimal.answer1 {
                                                 Image(systemName: "checkmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
                                                     .foregroundColor(.green)
                                                     .padding(.bottom, 110.0)
                                                     .padding(.leading, 240.0)
-                                            } else if submit && isButtonClicked && selectedAnswer1 != correctAnswer1 {
+                                            } else if submit && isButtonClicked && selectedAnswer1 != selectedAnimal.answer1 {
                                                 Image(systemName: "xmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
@@ -128,7 +128,7 @@ struct QuizView: View {
                                             
                                             
                                             
-                                            Text(camel.choices1[0])
+                                            Text(selectedAnimal.choices1[0])
                                                 .font(Font.system(size: 30))
                                                 .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                             
@@ -140,7 +140,7 @@ struct QuizView: View {
                                     Button {
                                     action:
                                         do {self.isButtonClicked1.toggle()
-                                            selectedAnswer1 = camel.choices1[1]}
+                                            selectedAnswer1 = selectedAnimal.choices1[1]}
                                         if self.isButtonClicked == true{
                                             self.isButtonClicked.toggle()
                                         }
@@ -159,7 +159,7 @@ struct QuizView: View {
                                                         .inset(by: 2.5)
                                                     
                                                         .stroke(
-                                                            (submit && isButtonClicked1 && selectedAnswer1 == correctAnswer1) ? Color.green : // If both conditions are true
+                                                            (submit && isButtonClicked1 && selectedAnswer1 == selectedAnimal.answer1) ? Color.green : // If both conditions are true
                                                             (submit && isButtonClicked1 ? Color.red : // If only isButtonClicked is true
                                                              isButtonClicked1 ? Color.brown :
                                                                 Color(red: 1, green: 0.96, blue: 0.81)), // If isButtonClicked is false
@@ -167,14 +167,14 @@ struct QuizView: View {
                                                         )
                                                     
                                                 )
-                                            if submit && isButtonClicked1 && selectedAnswer1 == correctAnswer1 {
+                                            if submit && isButtonClicked1 && selectedAnswer1 == selectedAnimal.answer1 {
                                                 Image(systemName: "checkmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
                                                     .foregroundColor(.green)
                                                     .padding(.bottom, 110.0)
                                                     .padding(.leading, 240.0)
-                                            } else if submit && isButtonClicked1 && selectedAnswer1 != correctAnswer1 {
+                                            } else if submit && isButtonClicked1 && selectedAnswer1 != selectedAnimal.answer1 {
                                                 Image(systemName: "xmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
@@ -185,7 +185,7 @@ struct QuizView: View {
                                             
                                             
                                             
-                                            Text(camel.choices1[1])
+                                            Text(selectedAnimal.choices1[1])
                                                 .font(Font.system(size: 30))
                                                 .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                             
@@ -200,7 +200,7 @@ struct QuizView: View {
                                 .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                                 .cornerRadius(30)
                             VStack(spacing:50){
-                                Text(camel.ques2)
+                                Text(selectedAnimal.ques2)
                                     .font(Font.system(size: 35))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
@@ -210,7 +210,7 @@ struct QuizView: View {
                                     Button {
                                     action:
                                         do {self.isButtonClicked2.toggle()
-                                            selectedAnswer2 = camel.choices2[0]}
+                                            selectedAnswer2 = selectedAnimal.choices2[0]}
                                         if self.isButtonClicked3 == true{
                                             self.isButtonClicked3.toggle()
                                             
@@ -230,7 +230,7 @@ struct QuizView: View {
                                                         .inset(by: 2.5)
                                                     
                                                         .stroke(
-                                                            (submit && isButtonClicked2 && selectedAnswer2 == correctAnswer2) ? Color.green : // If both conditions are true
+                                                            (submit && isButtonClicked2 && selectedAnswer2 == selectedAnimal.answer2) ? Color.green : // If both conditions are true
                                                             (submit && isButtonClicked2 ? Color.red : // If only isButtonClicked is true
                                                              isButtonClicked2 ? Color.brown :
                                                                 Color(red: 1, green: 0.96, blue: 0.81)), // If isButtonClicked is false
@@ -238,14 +238,14 @@ struct QuizView: View {
                                                         )
                                                     
                                                 )
-                                            if submit && isButtonClicked2 && selectedAnswer2 == correctAnswer2 {
+                                            if submit && isButtonClicked2 && selectedAnswer2 == selectedAnimal.answer2 {
                                                 Image(systemName: "checkmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
                                                     .foregroundColor(.green)
                                                     .padding(.bottom, 110.0)
                                                     .padding(.leading, 240.0)
-                                            } else if submit && isButtonClicked2 && selectedAnswer2 != correctAnswer2 {
+                                            } else if submit && isButtonClicked2 && selectedAnswer2 != selectedAnimal.answer2 {
                                                 Image(systemName: "xmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
@@ -255,7 +255,7 @@ struct QuizView: View {
                                             }
                                             
                                             
-                                            Text(camel.choices2[0])
+                                            Text(selectedAnimal.choices2[0])
                                                 .font(Font.system(size: 30))
                                                 .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                             
@@ -266,7 +266,7 @@ struct QuizView: View {
                                     Button {
                                     action:
                                         do {self.isButtonClicked3.toggle()
-                                            selectedAnswer2 = camel.choices2[1]}
+                                            selectedAnswer2 = selectedAnimal.choices2[1]}
                                         if self.isButtonClicked2 == true{
                                             self.isButtonClicked2.toggle()}
                                     } label: {
@@ -284,7 +284,7 @@ struct QuizView: View {
                                                         .inset(by: 2.5)
                                                     
                                                         .stroke(
-                                                            (submit && isButtonClicked3 && selectedAnswer2 == correctAnswer2) ? Color.green : // If both conditions are true
+                                                            (submit && isButtonClicked3 && selectedAnswer2 == selectedAnimal.answer2) ? Color.green : // If both conditions are true
                                                             (submit && isButtonClicked3 ? Color.red : // If only isButtonClicked is true
                                                              isButtonClicked3 ? Color.brown :
                                                                 Color(red: 1, green: 0.96, blue: 0.81)), // If isButtonClicked is false
@@ -292,14 +292,14 @@ struct QuizView: View {
                                                         )
                                                     
                                                 )
-                                            if submit && isButtonClicked3 && selectedAnswer2 == correctAnswer2 {
+                                            if submit && isButtonClicked3 && selectedAnswer2 == selectedAnimal.answer2 {
                                                 Image(systemName: "checkmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
                                                     .foregroundColor(.green)
                                                     .padding(.bottom, 110.0)
                                                     .padding(.leading, 240.0)
-                                            } else if submit && isButtonClicked3 && selectedAnswer2 != correctAnswer1 {
+                                            } else if submit && isButtonClicked3 && selectedAnswer2 != selectedAnimal.answer1 {
                                                 Image(systemName: "xmark.circle.fill")
                                                     .resizable()
                                                     .frame(width: 30, height: 30)
@@ -309,7 +309,7 @@ struct QuizView: View {
                                             }
                                             
                                             
-                                            Text(camel.choices2[1])
+                                            Text(selectedAnimal.choices2[1])
                                                 .font(Font.system(size: 30))
                                                 .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                             
@@ -327,7 +327,7 @@ struct QuizView: View {
                     }
 
                     Button {
-                        if selectedAnswer1 == correctAnswer1 && selectedAnswer2 == correctAnswer2 {
+                        if selectedAnswer1 == selectedAnimal.answer1 && selectedAnswer2 == selectedAnimal.answer2 {
                             navigate = true
                         } else {
                            navigate = false
