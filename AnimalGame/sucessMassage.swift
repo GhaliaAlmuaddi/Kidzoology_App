@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct sucessMassage: View {
     @AppStorage("Kid_name") var Currentname : String = ""
+    let rewardAnimal: Animals
+    
+    @Environment(\.modelContext) var context
+    @Environment(\.dismiss) var dismiss
+    @State private var isSaved: Bool = false
     var body: some View {
         NavigationStack{
         ZStack{
@@ -37,7 +43,7 @@ struct sucessMassage: View {
                     .padding(.top, 10)
                     
                 
-                Image("Cow")
+                Image(rewardAnimal.animalImage)
                  .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 129, height: 139)
@@ -51,8 +57,35 @@ struct sucessMassage: View {
                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                     .frame(width: 510, height: 39, alignment: .top)
                 
+//                Button("Save") {
+//                              save()
+//                          }
+//                          .foregroundColor(.white)
+//                          .font(.system(size: 24))
+//                          .bold()
+//                          .frame(width: 193, height: 51)
+//                          .background(
+//                              LinearGradient(
+//                                  stops: [
+//                                      Gradient.Stop(color: Color(red: 1, green: 0.55, blue: 0.26), location: 0.00),
+//                                      Gradient.Stop(color: Color(red: 0.95, green: 0.72, blue: 0.49).opacity(0.58), location: 1.00),
+//                                  ],
+//                                  startPoint: UnitPoint(x: 0.5, y: 0),
+//                                  endPoint: UnitPoint(x: 0.66, y: -2.79)
+//                              )
+//                          )
+//                          .cornerRadius(35)
+//                          .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+//                          .padding(.top, 50)
+//                          
+//                          if isSaved {
+//                              NavigationLink(destination: RahafView()) {
+//                                  EmptyView()
+//                              }
+//                              .hidden()
+//                          }
                 NavigationLink{
-                    ContentView()
+                    RahafView()
                 }label: {
                     Text("Ok")
                         .foregroundColor(.white)
@@ -79,6 +112,15 @@ struct sucessMassage: View {
         }
     }
     }
+    func save () {
+        let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, level: "g", animal_energy: "g")
+ //        //تعبينها بالبيانات الي جاتك من المودل
+ //    حطيت اشياء عشوائيه عشان اجرب
+ //
+        context.insert(Own_animal) // هنا خلاص بيتخزن الاوبجكت باري السويفت ديتا وبتنحفظ لوكلي
+ //
+     }
+
 }
 
 struct sucessMassageCard: View{
@@ -116,5 +158,5 @@ struct sucessMassageCard: View{
 }
 
 #Preview {
-    sucessMassage()
+    sucessMassage( rewardAnimal: camel)
 }

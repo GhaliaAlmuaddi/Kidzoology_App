@@ -18,6 +18,8 @@ struct QuizView: View {
     @State var correctAnswer2 = camel.answer2
     @State var submit = false
     @State var navigate = false
+    let selectedAnimal: Animals
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -318,7 +320,7 @@ struct QuizView: View {
                         
                         
                     }
-                    NavigationLink(destination: ContentView(), isActive: $navigate) {
+                    NavigationLink(destination: sucessMassage( rewardAnimal: selectedAnimal), isActive: $navigate) {
                        
                         EmptyView()
                         
@@ -364,5 +366,5 @@ struct QuizView: View {
  
 }
 #Preview {
-    QuizView()
+    QuizView(selectedAnimal: camel)
 }
