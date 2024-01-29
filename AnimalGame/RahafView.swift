@@ -15,10 +15,16 @@ struct RahafView: View {
     
     
     var body: some View {
-        Text("Rahaf")
-        ForEach(OwnAnimal) { animal in
-            Text(animal.animal_name)
-        } // هنا كنت ابغى اجرب اعرضهم، انتي اعرضيهم بالطريقه الي تناسبك، لكن لازم يكون فيه بيانات اوريدي تخزنت من صفحة شموخ عشان ينعرض شي في الشاشه
+        ZStack {
+            Color("backgroundColor").ignoresSafeArea()
+            
+            // Text("Rahaf")
+            VStack {
+                ForEach(OwnAnimal) { animal in
+                    Text(animal.animal_name)
+                } // هنا كنت ابغى اجرب اعرضهم، انتي اعرضيهم بالطريقه الي تناسبك، لكن لازم يكون فيه بيانات اوريدي تخزنت من صفحة شموخ عشان ينعرض شي في الشاشه
+            }
+        }
     }
 }
 

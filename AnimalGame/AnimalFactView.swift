@@ -13,7 +13,7 @@ struct AnimalFactView: View {
     let animals: [Animals] = [camel,horse,sheep, cow,gazelle, wolf,dog,pigeon,hawk, cat,sparrows, snake, scorpion,lizard]
     let animalinfo: Animals
     var body: some View {
-        NavigationStack{
+    //    NavigationStack{
         ZStack{
             Color("backgroundColor").ignoresSafeArea()
             
@@ -177,7 +177,7 @@ struct AnimalFactView: View {
             }.frame(width: 1000 , height: 700 , alignment: .topTrailing)
             
         }
-    }
+ //   }
             }
             
         }

@@ -21,7 +21,7 @@ struct QuizView: View {
     let selectedAnimal: Animals
     
     var body: some View {
-        NavigationStack{
+      //  NavigationStack{
             ZStack{
                 Color("backgroundColor")
                     .ignoresSafeArea()
@@ -321,48 +321,49 @@ struct QuizView: View {
                         
                     }
                     NavigationLink(destination: sucessMassage( rewardAnimal: selectedAnimal), isActive: $navigate) {
-                       
+                        
                         EmptyView()
                         
                     }
-
+                    
                     Button {
                         if selectedAnswer1 == selectedAnimal.answer1 && selectedAnswer2 == selectedAnimal.answer2 {
                             navigate = true
                         } else {
-                           navigate = false
+                            navigate = false
                             submit = true
                         }                    } label: {
-                        ZStack{
-                            
-                            
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 310, height: 84)
-                                .background(
-                                    LinearGradient(
-                                        stops: [
-                                            Gradient.Stop(color: Color(red: 1, green: 0.55, blue: 0.26), location: 0.00),
-                                            Gradient.Stop(color: Color(red: 0.95, green: 0.72, blue: 0.49).opacity(0.58), location: 1.00),
-                                        ],
-                                        startPoint: UnitPoint(x: 0.5, y: 0),
-                                        endPoint: UnitPoint(x: 0.66, y: -2.79)
+                            ZStack{
+                                
+                                
+                                Rectangle()
+                                    .foregroundColor(.clear)
+                                    .frame(width: 310, height: 84)
+                                    .background(
+                                        LinearGradient(
+                                            stops: [
+                                                Gradient.Stop(color: Color(red: 1, green: 0.55, blue: 0.26), location: 0.00),
+                                                Gradient.Stop(color: Color(red: 0.95, green: 0.72, blue: 0.49).opacity(0.58), location: 1.00),
+                                            ],
+                                            startPoint: UnitPoint(x: 0.5, y: 0),
+                                            endPoint: UnitPoint(x: 0.66, y: -2.79)
+                                        )
                                     )
-                                )
-                                .cornerRadius(50)
-                                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
-                            
-                            Text("Submit")
-                                .font(
-                                    Font.system(  size: 32) .weight(.bold))
-                                .foregroundColor(.white)
-                            
-                            
+                                    .cornerRadius(50)
+                                    .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+                                
+                                Text("Submit")
+                                    .font(
+                                        Font.system(  size: 32) .weight(.bold))
+                                    .foregroundColor(.white)
+                                
+                                
+                            }
                         }
-                    }
                 }}
             
-        }}
+        //}
+    }
  
 }
 #Preview {

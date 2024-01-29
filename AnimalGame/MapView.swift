@@ -28,6 +28,13 @@ struct MapView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 139, height: 174)
                 .clipped()
+            
+            NavigationLink {
+                animalsList()
+            }
+            label :{
+                Text("Here").bold()
+            }
         }
     }
 }
