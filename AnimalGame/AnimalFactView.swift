@@ -164,17 +164,25 @@ struct AnimalFactView: View {
                         
                     }
                     HStack{
-                        Image(systemName: "speaker.wave.3.fill")
-                            .resizable()
-                        
-                            .frame(width: 50 , height: 40)
-                            .foregroundColor(Color(red: 0.57, green: 0.77, blue: 0.56))
-                        
-                        Image(systemName: "house.fill")
-                            .resizable()
-                            .padding(.leading, 5.0)
-                            .frame(width: 50 , height: 40)
-                            .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        Button(action:{
+                            
+                        }){
+                            Image(systemName: "speaker.wave.3.fill")
+                                .resizable()
+                            
+                                .frame(width: 50 , height: 40)
+                                .foregroundColor(Color(red: 0.57, green: 0.77, blue: 0.56))
+                        }
+                        Button(action:{
+                            
+                        }){
+                            
+                            Image(systemName: "house.fill")
+                                .resizable()
+                                .padding(.leading, 5.0)
+                                .frame(width: 50 , height: 40)
+                                .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        }
                     }.frame(width: 1000 , height: 700 , alignment: .topTrailing)
                     
             
