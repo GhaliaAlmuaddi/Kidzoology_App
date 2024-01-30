@@ -360,6 +360,7 @@ struct QuizView: View {
                                 
                             }
                         }
+                   // Spacer()
                 }}
             
         //}

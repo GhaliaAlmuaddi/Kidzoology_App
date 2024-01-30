@@ -24,14 +24,13 @@ struct animalsList: View {
                     
                         .blur(radius: 0)
                     HStack{
-                        Text("Select an animal")
-                            .frame(width: 987, height: 40, alignment: .center)
+                        Text("Select an animal please :")
+                            .frame(width: 987, height: 40, alignment: .topLeading)
                             .font(
                                 Font.system(  size: 40
                                            )
                                 .weight(.bold)
                             )
-                        
                         
                             .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                         
@@ -41,13 +40,11 @@ struct animalsList: View {
                             .frame(width: 50 , height: 40)
                             .foregroundColor(Color(red: 0.57, green: 0.77, blue: 0.56))
                         
-                        
                         Image(systemName: "house.fill")
                             .resizable()
                             .padding(.leading, 5.0)
                             .frame(width: 50 , height: 40)
                             .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                        
                     }
                     
                 }
