@@ -62,11 +62,11 @@ struct animalsList: View {
                                         
                                         VStack{
                                             
-                                            Image(animal.animalName)
+                                            Image(animal.animalImage)
                                                 .resizable()
                                                 .frame(width: 129, height: 139)
                                             
-                                            Text(animal.animalImage)
+                                            Text(animal.animalName)
                                                 .font(.system(size: 24))
                                                 .bold()
                                             
@@ -93,11 +93,11 @@ struct animalsList: View {
                                     
                                     VStack{
                                         
-                                        Image(animal.animalName)
+                                        Image(animal.animalImage)
                                             .resizable()
                                             .frame(width: 129, height: 139)
                                         
-                                        Text(animal.animalImage)
+                                        Text(animal.animalName)
                                             .font(.system(size: 24))
                                             .bold()
                                         
