@@ -168,7 +168,19 @@ struct AnimalFactView: View {
                        
                         
                     }
+            
                     HStack{
+                        Button(action:{
+                            animalsList()
+                        }){
+                            
+                            Image(systemName: "arrow.backward")
+                                .resizable()
+                                .padding(.leading, 5.0)
+                                .frame(width: 50 , height: 40)
+                                
+                        }
+                        Spacer()
                         Button(action:{
                             playSound(sound: animalinfo.factSound)
                         }){
@@ -187,6 +199,9 @@ struct AnimalFactView: View {
                                 .frame(width: 50 , height: 40)
                                 
                         }
+                        
+                        
+                        
                     }.frame(width: 1000 , height: 700 , alignment: .topTrailing)
                 .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
                     
