@@ -202,7 +202,7 @@ struct AnimalFactView: View {
                         
                         
                         
-                    }.frame(width: 1000 , height: 700 , alignment: .topTrailing)
+                    }.frame(width: 1070 , height: 700 , alignment: .topTrailing)
                 .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
                     
             
