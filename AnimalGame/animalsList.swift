@@ -49,12 +49,17 @@ struct animalsList: View {
                         
                             .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                         
-                        Image(systemName: "speaker.wave.3.fill")
-                            .resizable()
+                        Button(action:{
+                                                    playSound(sound:"AnimalsListSound")
+                                                }){
+                                                    Image(systemName: "speaker.wave.3.fill")
+                                                        .resizable()
+                                                    
+                                                        .frame(width: 40 , height: 30)
+                                                        .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                                        .padding(3)
+                                                }
                         
-                            .frame(width: 40 , height: 30)
-                            .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                            .padding(3)
                         
                         NavigationLink {
                             HomePageView()
