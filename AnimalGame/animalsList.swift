@@ -11,7 +11,7 @@ struct animalsList: View {
     let animals: [Animals] = [camel,horse,sheep, cow,gazelle, wolf,dog,pigeon,hawk, cat,sparrows, snake, scorpion,lizard]
     
     var body: some View {
-       // NavigationStack{
+        NavigationStack{
         ZStack{
             Color("backgroundColor")
                 .ignoresSafeArea()
@@ -24,8 +24,23 @@ struct animalsList: View {
                     
                         .blur(radius: 0)
                     HStack{
-                        Text("Select an animal please :")
-                            .frame(width: 987, height: 40, alignment: .topLeading)
+                        
+                        NavigationLink {
+                        
+                                     MapView()
+                              
+                             } label: {
+
+                                     Image(systemName: "arrow.backward")
+                                         .resizable()
+                                         .padding(.leading, 5.0)
+                                         .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                              
+                             }
+                        
+
+                        Text("Arabian Peninsula Animals")
+                            .frame(width: 987, height: 40, alignment: .center)
                             .font(
                                 Font.system(  size: 40
                                            )
@@ -37,19 +52,27 @@ struct animalsList: View {
                         Image(systemName: "speaker.wave.3.fill")
                             .resizable()
                         
-                            .frame(width: 50 , height: 40)
-                            .foregroundColor(Color(red: 0.57, green: 0.77, blue: 0.56))
+                            .frame(width: 40 , height: 30)
+                            .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                            .padding(3)
                         
-                        Image(systemName: "house.fill")
-                            .resizable()
-                            .padding(.leading, 5.0)
-                            .frame(width: 50 , height: 40)
-                            .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        NavigationLink {
+                            HomePageView()
+                        } label: {
+                                
+                            Image(systemName: "house.fill")
+                                .resizable()
+                                .padding(.leading, 5.0)
+                                .frame(width: 40 , height: 30)
+                                .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        }
+                        
+                      
+                   
+                        
                     }
                     
                 }
-                
-                
                 
                 ScrollView(.horizontal){
                     VStack(spacing: 40){
@@ -60,11 +83,11 @@ struct animalsList: View {
                                     ZStack{
                                         animalListCard()
                                         
-                                        VStack{
+                                        VStack {
                                             
                                             Image(animal.animalImage)
                                                 .resizable()
-                                                .frame(width: 129, height: 139)
+                                              .frame(width: 129, height: 139)
                                             
                                             Text(animal.animalName)
                                                 .font(.system(size: 24))
@@ -121,7 +144,7 @@ struct animalsList: View {
             }
             
         }
-   // }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

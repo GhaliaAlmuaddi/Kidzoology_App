@@ -44,13 +44,10 @@ struct CharactersView: View {
                             
                             HomepageIn.toggle()
                             
-                            //                            Current_gender(CurrentState1 : &CurrentState3)
-                            
-                            
+                        
                             
                         }) {
-                            
-                            //  NavigationLink(destination:   NameView()) {
+                        
                             ZStack{
                                 
                                 RoundedRectangle(cornerRadius: 30).frame(width: 280, height: 276).foregroundStyle(Color(red: 0.75, green: 0.87, blue: 0.73)).shadow(color: .black.opacity(0.75), radius: 2, x: 0, y: 4)
@@ -75,9 +72,7 @@ struct CharactersView: View {
                             
                         }
                         
-                        
-                        
-                        
+           
                         
                         Button(action: {
                             
@@ -89,9 +84,7 @@ struct CharactersView: View {
                             
                             HomepageIn = true
                             
-                            
-                            //                        CurrentState3 = "girl"
-                            //                           Current_gender(CurrentState1 : CurrentState3)
+                         
                         }) {
                             
                             ZStack{

@@ -14,14 +14,14 @@ struct QuizView: View {
     @State  var isButtonClicked3 = false
     @State  var selectedAnswer1 = ""
     @State  var selectedAnswer2 = ""
-//    @State var correctAnswer1 = camel.answer1
-//    @State var correctAnswer2 = camel.answer2
+    //    @State var correctAnswer1 = camel.answer1
+    //    @State var correctAnswer2 = camel.answer2
     @State var submit = false
     @State var navigate = false
     let selectedAnimal: Animals
     
     var body: some View {
-      //  NavigationStack{
+        NavigationStack{
             ZStack{
                 Color("backgroundColor")
                     .ignoresSafeArea()
@@ -47,17 +47,24 @@ struct QuizView: View {
                             Image(systemName: "speaker.wave.3.fill")
                                 .resizable()
                             
-                                .frame(width: 50 , height: 40)
-                                .foregroundColor(Color(red: 0.57, green: 0.77, blue: 0.56))
+                                .frame(width: 40 , height: 30)
+                                .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                .padding(3)
                             
-                            Image(systemName: "house.fill")
-                                .resizable()
-                                .padding(.leading, 5.0)
-                                .frame(width: 50 , height: 40)
-                                .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                            NavigationLink {
+                                HomePageView()
+                            } label: {
+                                
+                           
+     
+                                Image(systemName: "house.fill")
+                                    .resizable()
+                                    .padding(.leading, 5.0)
+                                    .frame(width: 40 , height: 30)
+                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                            }
                         }
                     }
-                    
                     Spacer()
                     
                     VStack(spacing:20){
@@ -360,13 +367,14 @@ struct QuizView: View {
                                 
                             }
                         }
-                   // Spacer()
+                    // Spacer()
                 }}
             
-        //}
-    }
- 
-}
+            //}
+        }.navigationBarBackButtonHidden(true)
+        
+        
+    }}
 #Preview {
     QuizView(selectedAnimal: camel)
 }

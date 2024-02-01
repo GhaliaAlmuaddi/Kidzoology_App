@@ -17,7 +17,8 @@ struct RahafView: View {
     var body: some View {
         ZStack {
             Color("backgroundColor").ignoresSafeArea()
-            
+            HStack {
+            }
             // Text("Rahaf")
             VStack {
                 ForEach(OwnAnimal) { animal in
