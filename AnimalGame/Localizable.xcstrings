@@ -16,6 +16,9 @@
     "             " : {
 
     },
+    "Ahmad" : {
+
+    },
     "AnimalsListSound" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -43,7 +46,11 @@
         }
       }
     },
+    "Challenge questions" : {
+
+    },
     "Choose the correct answer:" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -52,6 +59,9 @@
           }
         }
       }
+    },
+    "Click to Start your journey" : {
+
     },
     "Diet:" : {
       "localizations" : {
@@ -62,6 +72,9 @@
           }
         }
       }
+    },
+    "Drag your animals into your zoo" : {
+
     },
     "Enter your name " : {
       "localizations" : {
@@ -94,9 +107,6 @@
       }
     },
     "Hello, world!" : {
-
-    },
-    "Here" : {
 
     },
     "Map" : {

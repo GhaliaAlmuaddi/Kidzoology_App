@@ -4,7 +4,6 @@
 //
 //  Created by Ghalia Mohammed Al Muaddi on 12/07/1445 AH.
 //
-
 import SwiftUI
 
 struct MapView: View {
@@ -20,18 +19,6 @@ struct MapView: View {
             Image("Map").resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 1288, height: 966)
-            
-            NavigationLink {
-                HomePageView()
-            } label: {
-            
-                Image(systemName: "house.fill")
-                    .resizable()
-                    .padding(.leading, 5.0)
-                    .frame(width: 40 , height: 30)
-                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-            
-            }.offset(x:560,y:-360)
             
          // Text("Welcome \(currentImage)") //
 
@@ -61,4 +48,3 @@ struct MapView: View {
 #Preview {
     MapView()
 }
-
