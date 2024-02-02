@@ -19,7 +19,7 @@ struct animalsList: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(.clear)
-                        .frame(width: 1353, height: 120)
+                        .frame(width: 1353, height: 95)
                         .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                     
                         .blur(radius: 0)
@@ -42,7 +42,7 @@ struct animalsList: View {
                         Text("Arabian Peninsula Animals")
                             .frame(width: 987, height: 40, alignment: .center)
                             .font(
-                                Font.system(  size: 40
+                                Font.system(  size: 35
                                            )
                                 .weight(.bold)
                             )

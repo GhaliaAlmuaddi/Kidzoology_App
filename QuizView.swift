@@ -29,15 +29,15 @@ struct QuizView: View {
                     ZStack{
                         Rectangle()
                             .foregroundColor(.clear)
-                            .frame(width: 1353, height: 120)
+                            .frame(width: 1353, height: 95)
                             .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                         
                             .blur(radius: 0)
                         HStack{
-                            Text("Choose the correct answer:")
-                                .frame(width: 987, height: 40, alignment: .topLeading)
+                            Text("Challenge questions")
+                                .frame(width: 987, height: 40, alignment: .center)
                                 .font(
-                                    Font.system(  size: 40
+                                    Font.system(  size: 35
                                                )
                                     .weight(.bold)
                                 )
@@ -68,8 +68,7 @@ struct QuizView: View {
                                     .frame(width: 40 , height: 30)
                                     .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
                             }
-                        }
-                    }
+                        }                    }
                     Spacer()
                     
                     VStack(spacing:20){

@@ -16,6 +16,12 @@ struct AnimalFactView: View {
             ZStack{
                 
                 Color("backgroundColor").ignoresSafeArea()
+//                Rectangle()
+//                    .foregroundColor(.clear)
+//                    .frame(width: 1353, height: 120)
+//                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
+                
+                
                 
                 Rectangle()
                     .frame(width: 1116 , height: 530)
@@ -169,53 +175,58 @@ struct AnimalFactView: View {
                     
                 }
                 
-                HStack{
-                    NavigationLink {
-                    
-                                animalsList()
-                          
-                         } label: {
-
-                                 Image(systemName: "arrow.backward")
-                                     .resizable()
-                                     .padding(.leading, 5.0)
-                                     .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                          
-                         }.padding(.leading,-20)
-                    
-                  Spacer()
+              
                 
-                    Button(action:{
-                        playSound(sound: animalinfo.factSound)
-                    }){
-                        Image(systemName: "speaker.wave.3.fill")
-                            .resizable()
+              
+                    HStack{
                         
-                            .frame(width: 40 , height: 30)
-                            .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                            .padding(3)
-                        
-                    }
-                    NavigationLink {
-                        HomePageView()
-                    } label: {
+                        NavigationLink {
                             
-                        Image(systemName: "house.fill")
-                            .resizable()
-                            .padding(.leading, 5.0)
-                            .frame(width: 40 , height: 30)
-                            .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                    }
-
+                            animalsList()
+                            
+                        } label: {
+                            
+                            Image(systemName: "arrow.backward")
+                                .resizable()
+                                .padding(.leading, 5.0)
+                                .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                            
+                        }.padding(.leading,-20)
+                        
+                        Spacer()
+                        
+                        Button(action:{
+                            playSound(sound: animalinfo.factSound)
+                        }){
+                            Image(systemName: "speaker.wave.3.fill")
+                                .resizable()
+                            
+                                .frame(width: 40 , height: 30)
+                                .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                .padding(3)
+                            
+                        }
+                        
+                        NavigationLink {
+                            HomePageView()
+                        } label: {
+                            
+                            Image(systemName: "house.fill")
+                                .resizable()
+                                .padding(.leading, 5.0)
+                                .frame(width: 40 , height: 30)
+                                .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        }
+                        
+                        
+                        
+                        
+                    }.frame(width: 1099.9 , height: 750 , alignment: .topTrailing)
+                        .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
                     
-                    
-                    
-                }.frame(width: 1099.9 , height: 750 , alignment: .topTrailing)
-                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                }
                 
-                
-                
-            }
+          
             
         }.navigationBarBackButtonHidden(true)
     }
