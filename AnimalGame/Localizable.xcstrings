@@ -16,6 +16,28 @@
     "             " : {
 
     },
+    "9 Hours" : {
+      "comment" : "Choice 2 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٩ ساعات "
+          }
+        }
+      }
+    },
+    "14 Hours" : {
+      "comment" : "Answer for question 2\n   Choice 1 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "١٤ ساعة "
+          }
+        }
+      }
+    },
     "AnimalsListSound" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -33,6 +55,17 @@
         }
       }
     },
+    "Approximately, how many hours do cats sleep a day?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقريبا، كم ساعة تنام القطط يومياً؟"
+          }
+        }
+      }
+    },
     "Arabian Peninsula Animals" : {
       "localizations" : {
         "ar" : {
@@ -43,8 +76,169 @@
         }
       }
     },
+    "Arachnid" : {
+      "comment" : "Animal type\n   Choice 1 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عنكبوتيات"
+          }
+        }
+      }
+    },
+    "Bird" : {
+      "comment" : "Animal type",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العصفور "
+          }
+        }
+      }
+    },
+    "Bird of Prey" : {
+      "comment" : "Animal type",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طير جارح "
+          }
+        }
+      }
+    },
+    "Birds" : {
+      "comment" : "Answer for question 2\n   Choice 2 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العصافير "
+          }
+        }
+      }
+    },
+    "Bull" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الثور "
+          }
+        }
+      }
+    },
+    "Calf" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العجل "
+          }
+        }
+      }
+    },
+    "Camel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجمل "
+          }
+        }
+      }
+    },
+    "Camels can store water for only a short period of time." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تستطيع الجمال تخزين الماء لفترة قليلة من الزمن."
+          }
+        }
+      }
+    },
+    "Can dogs be used by humans for hunting?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يستطيع البشر استخدام الكلب للصيد؟“"
+          }
+        }
+      }
+    },
+    "Carnivore" : {
+      "comment" : "Animal diet\n   Answer for question 1\n   Choice 1 for question 1\n   Choice 2 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آكل لحوم "
+          }
+        }
+      }
+    },
+    "Carnivorous" : {
+      "comment" : "Animal diet",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آكلات لحوم "
+          }
+        }
+      }
+    },
+    "Cat" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القطة "
+          }
+        }
+      }
+    },
+    "Cats conserve energy by sleeping for 13 to 14 hours a day. They have flexible bodies and teeth adapted for hunting small animals such as mice and rats." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحافظ القطط على طاقتها عن طريق النوم  ل ١٣ إلى ١٤ ساعه يومياً! لديهم جسد مرن و اسنان متكيفة على اصطياد الحيوانات الصغيرة كالفئران و الجرذان."
+          }
+        }
+      }
+    },
     "Challenge questions" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسئلة التحدي "
+          }
+        }
+      }
+    },
+    "Cheetah" : {
+      "comment" : "Answer for question 1\n   Choice 2 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفهد "
+          }
+        }
+      }
     },
     "Choose the correct answer:" : {
       "extractionState" : "stale",
@@ -58,7 +252,80 @@
       }
     },
     "Click to Start your journey" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط هنا لبدء رحلتك"
+          }
+        }
+      }
+    },
+    "Cow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البقرة"
+          }
+        }
+      }
+    },
+    "Cows Produce milk that we use  to make butter, yogurt and many other products. A baby cow is called a calf . An adult male is called a bull." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنتج البقرة الحليب الذي نصنع منه اللبن و الزبدة و منتجات أخرى. صغير البقرة يسمى عجل، و الذكر البالغ يسمى الثور!"
+          }
+        }
+      }
+    },
+    "Cows produce milk that we use to make butter, yogurt, and many other products. A baby cow is called a calf. An adult male is called a bull." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنتج البقرة الحليب الذي نصنع منه اللبن و الزبدة و منتجات أخرى. صغير البقرة يسمى عجل، و الذكر البالغ يسمى الثور!"
+          }
+        }
+      }
+    },
+    "Desert" : {
+      "comment" : "Answer for question 2\n   Choice 1 for question 2\n   Choice 2 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صحراء "
+          }
+        }
+      }
+    },
+    "Deserts" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء"
+          }
+        }
+      }
+    },
+    "Deserts and Grasslands" : {
+      "comment" : "Animal habitat",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء والمروج "
+          }
+        }
+      }
     },
     "Diet:" : {
       "localizations" : {
@@ -70,8 +337,59 @@
         }
       }
     },
+    "Diverse environments" : {
+      "comment" : "Animal habitat",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بيئات متنوعة"
+          }
+        }
+      }
+    },
+    "Do snakes have eyelids and ears?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يوجد للثعبان جفون أو أذنين؟"
+          }
+        }
+      }
+    },
+    "Dog" : {
+      "comment" : "Animal name\n   Choice 1 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلب "
+          }
+        }
+      }
+    },
+    "Dogs can provide assistance to humans by performing various tasks such as hunting, guarding, and searching for missing people." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلب مساعدة الإنسان بالقيام بعدة مهام كالحراسة و الصيد و البحث عن اشخاص مفقودين."
+          }
+        }
+      }
+    },
     "Drag your animals into your zoo" : {
-
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسحب حيواناتك إلى حديقتك"
+          }
+        }
+      }
     },
     "Enter your name " : {
       "localizations" : {
@@ -79,6 +397,127 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "أدخل اسمك"
+          }
+        }
+      }
+    },
+    "Exoskeleton" : {
+      "comment" : "Animal skin cover\n   Answer for question 1\n   Choice 2 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الهيكل الخارجي "
+          }
+        }
+      }
+    },
+    "Fact" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحقائق "
+          }
+        }
+      }
+    },
+    "False" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ"
+          }
+        }
+      }
+    },
+    "Farms" : {
+      "comment" : "Choice 2 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المزارع "
+          }
+        }
+      }
+    },
+    "Feathers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الريش "
+          }
+        }
+      }
+    },
+    "Forests and Mountains" : {
+      "comment" : "Animal habitat",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الغابات والجبال "
+          }
+        }
+      }
+    },
+    "Fur" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الفراء"
+          }
+        }
+      }
+    },
+    "Gazelle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الغزال "
+          }
+        }
+      }
+    },
+    "Gazelles can be extremely fast because they need to escape from dangerous predators like cheetahs and lions." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستطيع الغزال الجري بسرعة هائلة ليستطيع الهرب من الحيوانات المفترسة، كالأسد و الفهد."
+          }
+        }
+      }
+    },
+    "Grassland" : {
+      "comment" : "Animal habitat",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المرج "
+          }
+        }
+      }
+    },
+    "Grasslands" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المروج "
           }
         }
       }
@@ -103,8 +542,151 @@
         }
       }
     },
+    "Hair" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشعر "
+          }
+        }
+      }
+    },
+    "Have one or two humps that stores fat and break them to water and energy when needed and can conserve water for a long period of time." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديه سنامٌ او سنامين على ظهرهِ يستخدمهم لتخزين الدهون حتى يحوّلهم الى طاقةٍ و ماء في وقت الحاجة. يستطيع الجمل أيضاً تخزين الماء لمدة زمنيه طويله."
+          }
+        }
+      }
+    },
+    "Hawk" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصقر "
+          }
+        }
+      }
+    },
+    "Hawks are birds of prey. They hunt and eat animals for food. They have sharp claws and a short hooked beak to help them catch and kill animals." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصقور هي طيور جارحة تصطاد الحيوانات للأكل ، لذلك فلديهم مخالب حادة ومنقار قصير معقوف ليساعدهم على اصطياد و قتل الحيوانات."
+          }
+        }
+      }
+    },
     "Hello, world!" : {
 
+    },
+    "Herbivore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آكل أعشاب "
+          }
+        }
+      }
+    },
+    "Horse" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحصان "
+          }
+        }
+      }
+    },
+    "Horses can grind grasses and other harsh vegetation." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستطيع الحصان مضغ الأعشاب و الخضار القاسية؟"
+          }
+        }
+      }
+    },
+    "Ink" : {
+      "comment" : "Choice 2 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحبر "
+          }
+        }
+      }
+    },
+    "Lizard" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الضب "
+          }
+        }
+      }
+    },
+    "Lizards are cold-blooded animals. This means that the temperature of their body changes based on the temperature of the surroundings." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الضب من الحيوانات ذات الدم البارد، ما يعني انه يمكنه تغيير حرارة جسده حسب حراره البيئة المحيطة."
+          }
+        }
+      }
+    },
+    "Lizards are warm-blooded animals, like mammals." : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الضب كالثديات، من ذوات الدم الحار؟"
+          }
+        }
+      }
+    },
+    "Mammal" : {
+      "comment" : "Animal type",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الثديات"
+          }
+        }
+      }
+    },
+    "Mammals" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الثديات "
+          }
+        }
+      }
     },
     "Map" : {
       "localizations" : {
@@ -112,6 +694,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الخريطة"
+          }
+        }
+      }
+    },
+    "Mountains" : {
+      "comment" : "Animal habitat\n   Answer for question 2\n   Choice 1 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجبال "
           }
         }
       }
@@ -136,6 +729,17 @@
         }
       }
     },
+    "No" : {
+      "comment" : "Answer for question 1\n   Choice 2 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا"
+          }
+        }
+      }
+    },
     "Ok" : {
       "localizations" : {
         "ar" : {
@@ -156,12 +760,78 @@
         }
       }
     },
+    "Omnivore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قارت "
+          }
+        }
+      }
+    },
+    "Omnivores" : {
+      "comment" : "Animal diet",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قارت "
+          }
+        }
+      }
+    },
+    "Pigeon" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحمامة"
+          }
+        }
+      }
+    },
+    "Pigeons live in diverse environments like farms and city buildings." : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعيش الحمام في مناطق و بيئات مختلفة، كالمباني و المزارع؟"
+          }
+        }
+      }
+    },
+    "Pigeons usually make nests of sticks, and eggs are incubated by parents. Unlike most other birds, the Columbidae produce a type of milk and they feed their young with it." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبني الحمامة اعشاشها من العصي الصغيرة و تضع بيضها فيه و تحتضنه. عكس باقي الطيور، هذه الطيور الكولومبيدية  تنتج نوع من الحليب و تطعم صغارها به."
+          }
+        }
+      }
+    },
     "Please enter your name" : {
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "أدخل اسمك"
+          }
+        }
+      }
+    },
+    "Poison" : {
+      "comment" : "Answer for question 2\n   Choice 1 for question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السم "
           }
         }
       }
@@ -179,6 +849,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "QuizSound"
+          }
+        }
+      }
+    },
+    "Reptile" : {
+      "comment" : "Animal type",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الزواحف "
+          }
+        }
+      }
+    },
+    "Reptiles" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الزواحف"
           }
         }
       }
@@ -203,6 +895,50 @@
         }
       }
     },
+    "Scale" : {
+      "comment" : "Animal skin cover",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حراشف "
+          }
+        }
+      }
+    },
+    "Scales" : {
+      "comment" : "Animal skin cover\n   Answer for question 1\n   Choice 1 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حراشف "
+          }
+        }
+      }
+    },
+    "Scorpion" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العقرب "
+          }
+        }
+      }
+    },
+    "Scorpions use their poison to kill prey and to defend against predators. They quickly grab an insect with their pincers and sting their prey." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدم العقرب سمّه لقتل فريسته و للدفاع عن نفسه من المفترسين. يمسك الحشرات بسرعة هائلة بكماشاته ثم يلدغ."
+          }
+        }
+      }
+    },
     "Select your character " : {
       "localizations" : {
         "ar" : {
@@ -213,12 +949,78 @@
         }
       }
     },
+    "Sheep" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخروف "
+          }
+        }
+      }
+    },
+    "Sheep can jump nearly 12 feet in a single bound. They have distinctive beards and long, warm coats to protect them from cold temperatures and wind." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعيش الخروف في المناطق العشبية و يستطيع القفز مرة واحدة لمسافة ١٢ قدم! لديه لحية مميزة و طويلة ويغطيه الصوف ليحميه من البرد و الرياح."
+          }
+        }
+      }
+    },
     "Skin:" : {
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "الجلد"
+            "value" : "الغطاء"
+          }
+        }
+      }
+    },
+    "Snake" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الثعبان "
+          }
+        }
+      }
+    },
+    "Sparrow" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العصفور "
+          }
+        }
+      }
+    },
+    "Sparrows are omnivores, they eat seeds and worms." : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العصافير تنتمي للقوارت، فهي تتغذى على الحبوب و الديدان؟"
+          }
+        }
+      }
+    },
+    "Sparrows often make their nests near houses or buildings. This means they are one of the easiest birds to see in the wild." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يبني العصفور أعشاشه عادةً قرب المنازل و المباني. لذلك فهم اسهل أنواع الطيور للعثور عليهم!"
           }
         }
       }
@@ -253,12 +1055,67 @@
         }
       }
     },
+    "The horse is fast, so it has a long leg bone. It also has a set of strong, high-crowned teeth, suited to grinding grasses and other harsh vegetation." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديه عظم فخدٍ طويل، لذلك فهو سريعٌ جداً! لديه كذلك اسنان قوية و طويلة تساعدهُ على مضغ الأعشاب و الخضار القاسية أيضاً."
+          }
+        }
+      }
+    },
+    "The snake's body is covered with scales. It sheds its skin many times during its life, and it has no ears or eyelids." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يغير الثعبان حراشفهُ أكثر من مرة خلال حياته. و لا يوجد لديه أي جفون ولا أذنين."
+          }
+        }
+      }
+    },
+    "The wolf's howl is used as a warning of danger." : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدم الذئب العواء لتنبيه المجموعات الأُخرى عن وجود خطر؟"
+          }
+        }
+      }
+    },
     "This animal has been added to your zoo" : {
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تم إضافة الحيوان إلى حديقتك"
+          }
+        }
+      }
+    },
+    "To which types of animals do cows belong?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلى أي نوع من الحيوانات تنتمي البقرة؟"
+          }
+        }
+      }
+    },
+    "True" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صح"
           }
         }
       }
@@ -279,6 +1136,248 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مرحبا"
+          }
+        }
+      }
+    },
+    "What covers horses skin?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يغطي جلد الحصان؟"
+          }
+        }
+      }
+    },
+    "What covers the dog's skin?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يغطي جلد الكلب؟"
+          }
+        }
+      }
+    },
+    "What covers the gazelle's skin?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الذي يغطي جلد الغزال؟"
+          }
+        }
+      }
+    },
+    "What do scorpions use to kill prey and defend against predators?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يستخدم العقرب لقتل فريسته أو للدفاع عن نفسه؟"
+          }
+        }
+      }
+    },
+    "What do we call the baby cow?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا نسمي صغير البقرة؟"
+          }
+        }
+      }
+    },
+    "What is the lizard's skin made of?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يغطي جسم الضب؟"
+          }
+        }
+      }
+    },
+    "What is the scorpion's skin made of?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يغطي جسم العقرب؟"
+          }
+        }
+      }
+    },
+    "What kind of diet do camels have?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هي طبيعة غذاء الجمل؟"
+          }
+        }
+      }
+    },
+    "What kind of diet do hawks have?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هي طبيعة غذاء الصقر؟"
+          }
+        }
+      }
+    },
+    "What kind of diet do pigeons have?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هي طبيعة غذاء الحمام؟"
+          }
+        }
+      }
+    },
+    "What kind of diet do wolves have?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هي طبيعة غذاء الذئاب؟"
+          }
+        }
+      }
+    },
+    "What protects the sheep from cold temperatures and wind?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما اللذي يحمي الخراف من البرد و الرياح؟"
+          }
+        }
+      }
+    },
+    "What type of animals are cats?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلى أي نوع من الحيوانات تنتمي القطط؟"
+          }
+        }
+      }
+    },
+    "What type of animals are sparrows?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلى أي نوع من الحيوانات تنتمي العصافير؟"
+          }
+        }
+      }
+    },
+    "Where do hawks live?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أين تعيش الصقور؟"
+          }
+        }
+      }
+    },
+    "Where do sheep live?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أين يعيش الخروف "
+          }
+        }
+      }
+    },
+    "Where do snakes live?" : {
+      "comment" : "Question 2",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " أين تعيش الثعابين؟"
+          }
+        }
+      }
+    },
+    "Which animal is considered as a predator to the gazelle?" : {
+      "comment" : "Question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أي حيوان يعتبر من الحيوانات التي تفترس الغزال؟"
+          }
+        }
+      }
+    },
+    "Wolf" : {
+      "comment" : "Animal name",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الذئب "
+          }
+        }
+      }
+    },
+    "Wolves communicate with more than one howl. The howl is used as a way to call to another pack or to warn of danger. Each pack has a unique howl." : {
+      "comment" : "Animal fact",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تتواصل الذئاب بأكثر من نوع من العواء!  لنداء مجموعة أخرى من الذئاب أو تنبيههم عن الخطر. ويختلف العواء من مجموعة لأخرى."
+          }
+        }
+      }
+    },
+    "Wool" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصوف"
+          }
+        }
+      }
+    },
+    "Yes" : {
+      "comment" : "Answer for question 1\n   Choice 1 for question 1",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نعم"
           }
         }
       }

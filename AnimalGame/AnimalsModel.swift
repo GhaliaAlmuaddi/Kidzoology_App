@@ -28,33 +28,358 @@ struct Animals: Identifiable {
 }
 
 
-var camel = Animals(id: 1,animalName: "Camel", type: "Mammals", diet: "Herbivore", habitat: "Deserts", skinCover: "Fur", fact: "Have one or two humps that stores fat and break them to water and energy when needed and can conserve water for a long period of time.", animalImage: "Camel", ques1: "What kind of diet do camels have?", choices1: ["Herbivore" , "Omnivore"], answer1: "Herbivore", ques2: "Camels can store water for only a short period of time.", choices2: ["True", "False"], answer2: "False", factSound: "CamelFacts", itSound: "CamelSound")
+var camel = Animals(
+    id: 1,
+    animalName: NSLocalizedString("Camel", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Deserts", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Fur", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Have one or two humps that stores fat and break them to water and energy when needed and can conserve water for a long period of time.", comment: "Animal fact"),
+    animalImage: "Camel",
+    ques1: NSLocalizedString("What kind of diet do camels have?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Herbivore", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Omnivore", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Herbivore", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Camels can store water for only a short period of time.", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("True", comment: "Choice 1 for question 2"),
+        NSLocalizedString("False", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("False", comment: "Answer for question 2"),
+    factSound: "CamelFacts",
+    itSound: "CamelSound"
+)
 
-var horse = Animals(id:2, animalName: "Horse", type: "Mammals", diet: "Herbivore", habitat: "Grasslands", skinCover: "Hair", fact: "The horse is fast, so it has a long leg bone. It also has a set of strong, high-crowned teeth, suited to grinding grasses and other harsh vegetation.", animalImage: "Horse", ques1: "What covers horses skin?", choices1: ["Wool" , "Hair"], answer1: "Hair", ques2: "Horses can grind grasses and other harsh vegetation.", choices2: ["True", "False"], answer2: "True", factSound: "HorseFacts", itSound: "HorseSound")
+var horse = Animals(
+    id: 2,
+    animalName: NSLocalizedString("Horse", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Grasslands", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Hair", comment: "Animal skin cover"),
+    fact: NSLocalizedString("The horse is fast, so it has a long leg bone. It also has a set of strong, high-crowned teeth, suited to grinding grasses and other harsh vegetation.", comment: "Animal fact"),
+    animalImage: "Horse",
+    ques1: NSLocalizedString("What covers horses skin?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Wool", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Hair", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Hair", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Horses can grind grasses and other harsh vegetation.", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("True", comment: "Choice 1 for question 2"),
+        NSLocalizedString("False", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("True", comment: "Answer for question 2"),
+    factSound: "HorseFacts",
+    itSound: "HorseSound"
+)
 
-var sheep = Animals(id:3,animalName: "Sheep", type: "Mammals", diet: "Herbivore", habitat: "Grasslands", skinCover: "Wool", fact: "Sheep can jump nearly 12 feet in a single bound. They have distinctive beards and long, warm coats to protect them from cold temperatures and wind.", animalImage: "Sheep", ques1: "Where do sheep live?", choices1: ["Grasslands" , "Desert"], answer1: "Grasslands", ques2: "What protects the sheep from cold temperatures and wind?", choices2: ["Feathers", "Wool"], answer2: "Wool", factSound: "SheepFacts", itSound: "SheepSound")
+var sheep = Animals(
+    id: 3,
+    animalName: NSLocalizedString("Sheep", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Grasslands", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Wool", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Sheep can jump nearly 12 feet in a single bound. They have distinctive beards and long, warm coats to protect them from cold temperatures and wind.", comment: "Animal fact"),
+    animalImage: "Sheep",
+    ques1: NSLocalizedString("Where do sheep live?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Grasslands", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Desert", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Grasslands", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("What protects the sheep from cold temperatures and wind?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Feathers", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Wool", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Wool", comment: "Answer for question 2"),
+    factSound: "SheepFacts",
+    itSound: "SheepSound"
+)
 
-var cow = Animals(id:4,animalName: "Cow", type: "Mammals", diet: "Herbivore", habitat: "Grassland", skinCover: "Hair", fact: "Cows Produce milk that we use  to make butter, yogurt and many other products. A baby cow is called a calf . An adult male is called a bull.", animalImage: "Cow", ques1: "What do we call the baby cow?", choices1: ["Bull" , "Calf"], answer1: "Calf", ques2: "To which types of animals do cows belong?", choices2: ["Mammals", "Reptiles"], answer2: "Mammals", factSound: "CowFacts", itSound: "CowSound")
+var cow = Animals(
+    id: 4,
+    animalName: NSLocalizedString("Cow", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Grassland", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Hair", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Cows produce milk that we use to make butter, yogurt, and many other products. A baby cow is called a calf. An adult male is called a bull.", comment: "Animal fact"),
+    animalImage: "Cow",
+    ques1: NSLocalizedString("What do we call the baby cow?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Bull", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Calf", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Calf", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("To which types of animals do cows belong?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Mammals", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Reptiles", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Mammals", comment: "Answer for question 2"),
+    factSound: "CowFacts",
+    itSound: "CowSound"
+)
 
-var gazelle = Animals(id:5,animalName: "Gazelle", type: "Mammals", diet: "Herbivore", habitat: "Deserts and Grasslands", skinCover: "Fur", fact: "Gazelle can be extremely fast because there are dangerous predators they need to escape from, like Cheetahs and lions.", animalImage: "Gazelle", ques1: "Which animal is considered as a predator to the gazelle?", choices1: ["Dog" , "Cheetah"], answer1: "Cheetah", ques2: "What covers the gazelles skin?", choices2: ["Hair", "Fur"], answer2: "Fur", factSound: "GazelleFacts", itSound: "GazelleSound")
+var gazelle = Animals(
+    id: 5,
+    animalName: NSLocalizedString("Gazelle", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Deserts and Grasslands", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Fur", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Gazelles can be extremely fast because they need to escape from dangerous predators like cheetahs and lions.", comment: "Animal fact"),
+    animalImage: "Gazelle",
+    ques1: NSLocalizedString("Which animal is considered as a predator to the gazelle?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Dog", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Cheetah", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Cheetah", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("What covers the gazelle's skin?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Hair", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Fur", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Fur", comment: "Answer for question 2"),
+    factSound: "GazelleFacts",
+    itSound: "GazelleSound"
+)
 
-var wolf = Animals(id:6,animalName: "Wolf", type: "Mammals", diet: "Carnivore", habitat: "Forests and Mountains", skinCover: "Fur", fact: "Wolves communicate with more than one howl. The howl is used as a way to call to another pack or a warn of danger. Each pack has a unique howl.", animalImage: "Wolf", ques1: "What kind of diet do wolfs have?", choices1: ["Carnivore" , "Herbivore"], answer1: "Carnivore", ques2: "The wolfs hawl is used as a warn of danger.", choices2: ["True", "False"], answer2: "True", factSound: "WolfFacts", itSound: "WolfSound")
+var wolf = Animals(
+    id: 6,
+    animalName: NSLocalizedString("Wolf", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Carnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Forests and Mountains", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Fur", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Wolves communicate with more than one howl. The howl is used as a way to call to another pack or to warn of danger. Each pack has a unique howl.", comment: "Animal fact"),
+    animalImage: "Wolf",
+    ques1: NSLocalizedString("What kind of diet do wolves have?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Carnivore", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Herbivore", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Carnivore", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("The wolf's howl is used as a warning of danger.", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("True", comment: "Choice 1 for question 2"),
+        NSLocalizedString("False", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("True", comment: "Answer for question 2"),
+    factSound: "WolfFacts",
+    itSound: "WolfSound"
+)
 
-var dog = Animals(id:7,animalName: "Dog", type: "Mammals", diet: "Omnivore", habitat: "Diverse environments", skinCover: "Fur", fact: "Dogs can provide assistance to humans by performing various tasks such as hunting, guarding and searching for missing people.", animalImage: "Dog", ques1: "Can dogs be used by humans for hunting?", choices1: ["Yes" , "No"], answer1: "Yes", ques2: "What covers the dog skin?", choices2: ["Wool", "Fur"], answer2: "Fur", factSound: "DogFacts", itSound: "DogSound")
 
-var pigeon = Animals(id:8,animalName: "Pigeon", type: "Bird", diet: "Herbivore", habitat: "Diverse environments", skinCover: "Feathers", fact: "They usually make nests of sticks, and eggs are incubated parent. Unlike most other birds, the Columbidae produce a type of milk and they feed their young with it.", animalImage: "Pigeon", ques1: "What kind of diet do pigeons have?", choices1: ["Herbivore" , "Omnivore"], answer1: "Herbivore", ques2: "Pigeons live in diverse environments like farms and city buildings.", choices2: ["True", "False"], answer2: "True", factSound: "PigeonFacts", itSound: "PigeonSound")
+var dog = Animals(
+    id: 7,
+    animalName: NSLocalizedString("Dog", comment: "Animal name"),
+    type: NSLocalizedString("Mammals", comment: "Animal type"),
+    diet: NSLocalizedString("Omnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Diverse environments", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Fur", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Dogs can provide assistance to humans by performing various tasks such as hunting, guarding, and searching for missing people.", comment: "Animal fact"),
+    animalImage: "Dog",
+    ques1: NSLocalizedString("Can dogs be used by humans for hunting?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Yes", comment: "Choice 1 for question 1"),
+        NSLocalizedString("No", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Yes", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("What covers the dog's skin?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Wool", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Fur", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Fur", comment: "Answer for question 2"),
+    factSound: "DogFacts",
+    itSound: "DogSound"
+)
 
-var hawk = Animals(id:9,animalName: "Hawk", type: "Bird of Prey", diet: "Carnivore", habitat: "Mountains", skinCover: "Feathers", fact: "Hawk are birds of prey, they hunt and eat animals for food. have sharp claws and a short hooked beak to help it catch and kill animals.", animalImage: "Hawk", ques1: "What kind of diet do Hawks have?", choices1: ["Omnivore" , "Carnivore"], answer1: "Carnivore", ques2: "Where do hawks live?", choices2: ["Mountains", "Deserts"], answer2: "Mountains", factSound: "HawkFacts", itSound: "HawkSound")
+var pigeon = Animals(
+    id: 8,
+    animalName: NSLocalizedString("Pigeon", comment: "Animal name"),
+    type: NSLocalizedString("Bird", comment: "Animal type"),
+    diet: NSLocalizedString("Herbivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Diverse environments", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Feathers", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Pigeons usually make nests of sticks, and eggs are incubated by parents. Unlike most other birds, the Columbidae produce a type of milk and they feed their young with it.", comment: "Animal fact"),
+    animalImage: "Pigeon",
+    ques1: NSLocalizedString("What kind of diet do pigeons have?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Herbivore", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Omnivore", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Herbivore", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Pigeons live in diverse environments like farms and city buildings.", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("True", comment: "Choice 1 for question 2"),
+        NSLocalizedString("False", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("True", comment: "Answer for question 2"),
+    factSound: "PigeonFacts",
+    itSound: "PigeonSound"
+)
 
-var cat = Animals(id:10,animalName: "Cat", type: "Mammal", diet: "Carnivore", habitat: "Diverse environments", skinCover: "Fur", fact: "Cats conserve energy by sleeping for 13 to 14 hours a day. They have flexible bodies and teeth adapted for hunting small animals such as mice and rats.", animalImage: "Cat", ques1: "What type of animals cats are?", choices1: ["Arachnid" , "Mammals"], answer1: "Mammals", ques2: "Approximately, How manys hours do cats sleep a day?", choices2: ["14 Hours", "9 Hours"], answer2: "14 Hours", factSound: "CatFacts", itSound: "CatSound")
+var hawk = Animals(
+    id: 9,
+    animalName: NSLocalizedString("Hawk", comment: "Animal name"),
+    type: NSLocalizedString("Bird of Prey", comment: "Animal type"),
+    diet: NSLocalizedString("Carnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Mountains", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Feathers", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Hawks are birds of prey. They hunt and eat animals for food. They have sharp claws and a short hooked beak to help them catch and kill animals.", comment: "Animal fact"),
+    animalImage: "Hawk",
+    ques1: NSLocalizedString("What kind of diet do hawks have?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Omnivore", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Carnivore", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Carnivore", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Where do hawks live?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Mountains", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Deserts", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Mountains", comment: "Answer for question 2"),
+    factSound: "HawkFacts",
+    itSound: "HawkSound"
+)
 
-var sparrows = Animals(id:11,animalName: "Sparrow", type: "Bird", diet: "Omnivore", habitat: "Diverse environments", skinCover: "Feathers", fact: "Sparrows often make their nests near houses or buildings. This means they are one of the easiest birds to see in the wild.", animalImage: "Bird", ques1: "Sparrows are omnivores, they eat seeds and worms.", choices1: ["True" , "False"], answer1: "True", ques2: "What type of animals sparrows are?", choices2: ["Mammals", "Birds"], answer2: "Birds", factSound: "BirdFacts", itSound: "BirdSound")
+var cat = Animals(
+    id: 10,
+    animalName: NSLocalizedString("Cat", comment: "Animal name"),
+    type: NSLocalizedString("Mammal", comment: "Animal type"),
+    diet: NSLocalizedString("Carnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Diverse environments", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Fur", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Cats conserve energy by sleeping for 13 to 14 hours a day. They have flexible bodies and teeth adapted for hunting small animals such as mice and rats.", comment: "Animal fact"),
+    animalImage: "Cat",
+    ques1: NSLocalizedString("What type of animals are cats?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Arachnid", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Mammals", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Mammals", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Approximately, how many hours do cats sleep a day?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("14 Hours", comment: "Choice 1 for question 2"),
+        NSLocalizedString("9 Hours", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("14 Hours", comment: "Answer for question 2"),
+    factSound: "CatFacts",
+    itSound: "CatSound"
+)
 
-var snake = Animals(id:12,animalName: "Snake", type: "Reptile", diet: "Carnivore", habitat: "Deserts", skinCover: "Scale", fact: "The snake's body is covered with scales.It sheds its skin many times during its life , and have no ears or eyelids.", animalImage: "Snake", ques1: "Do snakes have eyelids and ears?", choices1: ["Yes" , "No"], answer1: "No", ques2: "Where do snakes Live?", choices2: ["Desert", "Farms"], answer2: "Desert", factSound: "SnakeFacts", itSound: "SnakeSound")
+var sparrows = Animals(
+    id: 11,
+    animalName: NSLocalizedString("Sparrow", comment: "Animal name"),
+    type: NSLocalizedString("Bird", comment: "Animal type"),
+    diet: NSLocalizedString("Omnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Diverse environments", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Feathers", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Sparrows often make their nests near houses or buildings. This means they are one of the easiest birds to see in the wild.", comment: "Animal fact"),
+    animalImage: "Bird",
+    ques1: NSLocalizedString("Sparrows are omnivores, they eat seeds and worms.", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("True", comment: "Choice 1 for question 1"),
+        NSLocalizedString("False", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("True", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("What type of animals are sparrows?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Mammals", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Birds", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Birds", comment: "Answer for question 2"),
+    factSound: "BirdFacts",
+    itSound: "BirdSound"
+)
 
-var scorpion = Animals(id:13,animalName: "Scorpion", type: "Arachnid", diet: "Carnivorous", habitat: "Deserts", skinCover: "Exoskeleton", fact: "Scorpions use their poison to kill prey and to defend against predators. They quickly grab an insect with their pincers and sting their prey.", animalImage: "Scorpion", ques1: "What is the scorpion's skin made of?", choices1: ["Scales" , "Exoskeleton"], answer1: "Exoskeleton", ques2: "What do scorions use to kill preys and defend against predators?", choices2: ["Poison", "Ink"], answer2: "Poison", factSound: "ScorpionFacts", itSound: "")
+var snake = Animals(
+    id: 12,
+    animalName: NSLocalizedString("Snake", comment: "Animal name"),
+    type: NSLocalizedString("Reptile", comment: "Animal type"),
+    diet: NSLocalizedString("Carnivore", comment: "Animal diet"),
+    habitat: NSLocalizedString("Deserts", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Scale", comment: "Animal skin cover"),
+    fact: NSLocalizedString("The snake's body is covered with scales. It sheds its skin many times during its life, and it has no ears or eyelids.", comment: "Animal fact"),
+    animalImage: "Snake",
+    ques1: NSLocalizedString("Do snakes have eyelids and ears?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Yes", comment: "Choice 1 for question 1"),
+        NSLocalizedString("No", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("No", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Where do snakes live?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Desert", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Farms", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Desert", comment: "Answer for question 2"),
+    factSound: "SnakeFacts",
+    itSound: "SnakeSound"
+)
 
-var lizard = Animals(id:14,animalName: "Lizard", type: "Reptile", diet: "Omnivores", habitat: "Deserts", skinCover: "Scales", fact: "Lizards are cold-blooded animals. This means that the temperature of the body changes based on the temperature of the surroundings.", animalImage: "Lizard", ques1: "What is the lizard's skin made of?", choices1: ["Scales" , "Exoskeleton"], answer1: "Scales", ques2: "Lizards are warm-blooded animals, like mammals.", choices2: ["True", "False"], answer2: "False", factSound: "LizardFacts", itSound: "LizardSound")
+var scorpion = Animals(
+    id: 13,
+    animalName: NSLocalizedString("Scorpion", comment: "Animal name"),
+    type: NSLocalizedString("Arachnid", comment: "Animal type"),
+    diet: NSLocalizedString("Carnivorous", comment: "Animal diet"),
+    habitat: NSLocalizedString("Deserts", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Exoskeleton", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Scorpions use their poison to kill prey and to defend against predators. They quickly grab an insect with their pincers and sting their prey.", comment: "Animal fact"),
+    animalImage: "Scorpion",
+    ques1: NSLocalizedString("What is the scorpion's skin made of?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Scales", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Exoskeleton", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Exoskeleton", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("What do scorpions use to kill prey and defend against predators?", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("Poison", comment: "Choice 1 for question 2"),
+        NSLocalizedString("Ink", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("Poison", comment: "Answer for question 2"),
+    factSound: "ScorpionFacts",
+    itSound: ""
+)
+
+
+var lizard = Animals(
+    id: 14,
+    animalName: NSLocalizedString("Lizard", comment: "Animal name"),
+    type: NSLocalizedString("Reptile", comment: "Animal type"),
+    diet: NSLocalizedString("Omnivores", comment: "Animal diet"),
+    habitat: NSLocalizedString("Deserts", comment: "Animal habitat"),
+    skinCover: NSLocalizedString("Scales", comment: "Animal skin cover"),
+    fact: NSLocalizedString("Lizards are cold-blooded animals. This means that the temperature of their body changes based on the temperature of the surroundings.", comment: "Animal fact"),
+    animalImage: "Lizard",
+    ques1: NSLocalizedString("What is the lizard's skin made of?", comment: "Question 1"),
+    choices1: [
+        NSLocalizedString("Scales", comment: "Choice 1 for question 1"),
+        NSLocalizedString("Exoskeleton", comment: "Choice 2 for question 1")
+    ],
+    answer1: NSLocalizedString("Scales", comment: "Answer for question 1"),
+    ques2: NSLocalizedString("Lizards are warm-blooded animals, like mammals.", comment: "Question 2"),
+    choices2: [
+        NSLocalizedString("True", comment: "Choice 1 for question 2"),
+        NSLocalizedString("False", comment: "Choice 2 for question 2")
+    ],
+    answer2: NSLocalizedString("False", comment: "Answer for question 2"),
+    factSound: "LizardFacts",
+    itSound: "LizardSound"
+)
+
 
 
 
