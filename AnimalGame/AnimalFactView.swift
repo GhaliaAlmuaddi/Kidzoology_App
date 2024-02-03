@@ -13,13 +13,14 @@ struct AnimalFactView: View {
     let animalinfo: Animals
     var body: some View {
         NavigationStack{
+         
             ZStack{
                 
                 Color("backgroundColor").ignoresSafeArea()
-//                Rectangle()
-//                    .foregroundColor(.clear)
-//                    .frame(width: 1353, height: 120)
-//                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
+                //                Rectangle()
+                //                    .foregroundColor(.clear)
+                //                    .frame(width: 1353, height: 120)
+                //                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                 
                 
                 
@@ -57,8 +58,11 @@ struct AnimalFactView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                             .frame(width: 319, alignment: .center)
-                    }.frame(width: 900 , height: 750 , alignment: .bottomTrailing)
+                    }/*.frame(width: 900 , height: 750 , alignment: .bottomTrailing)*/
+                    .padding([.top, .leading], 650)
                 }
+           
+                
                 
                 
                 ForEach(animals) { animal in
@@ -191,9 +195,10 @@ struct AnimalFactView: View {
                                 .padding(.leading, 5.0)
                                 .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
                             
-                        }.padding(.leading,-20)
+                        }/*.padding(.leading,-20)*/
                         
-                        Spacer()
+                       // Spacer()
+                        .padding(.trailing , 900)
                         
                         Button(action:{
                             playSound(sound: animalinfo.factSound)
@@ -221,8 +226,13 @@ struct AnimalFactView: View {
                         
                         
                         
-                    }.frame(width: 1099.9 , height: 750 , alignment: .topTrailing)
+                    }/*.frame(width: 1099.9 , height: 750 , alignment: .topTrailing)*/
                         .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                        .padding(.top , -330)
+                
+                
+                
+                
                     
                 }
                 
