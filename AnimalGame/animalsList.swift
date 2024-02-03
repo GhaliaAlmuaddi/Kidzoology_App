@@ -19,10 +19,21 @@ struct animalsList: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(.clear)
-                        .frame(width: 1353, height: 95)
+                        .frame(width: 1190, height: 95)
                         .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                     
                         .blur(radius: 0)
+                    
+                    
+                    Text("Arabian Peninsula Animals")
+                        .frame(width: 987, height: 40, alignment: .center)
+                        .font(
+                            Font.system(  size: 35
+                                       )
+                            .weight(.bold)
+                        )
+                    
+                        .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                     HStack{
                         
                         NavigationLink {
@@ -37,18 +48,9 @@ struct animalsList: View {
                                          .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
                               
                              }
-                        
+                             .padding()
 
-                        Text("Arabian Peninsula Animals")
-                            .frame(width: 987, height: 40, alignment: .center)
-                            .font(
-                                Font.system(  size: 35
-                                           )
-                                .weight(.bold)
-                            )
-                        
-                            .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                        
+                        Spacer()
                         Button(action:{
                                                     playSound(sound:"AnimalsListSound")
                                                 }){
@@ -67,12 +69,12 @@ struct animalsList: View {
                                 
                             Image(systemName: "house.fill")
                                 .resizable()
-                                .padding(.leading, 5.0)
+                                .padding(.trailing, 5.0)
                                 .frame(width: 40 , height: 30)
                                 .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
                         }
                         
-                      
+                        .padding(.trailing)
                    
                         
                     }

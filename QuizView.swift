@@ -25,7 +25,7 @@ struct QuizView: View {
             ZStack{
                 Color("backgroundColor")
                     .ignoresSafeArea()
-                VStack(spacing:10){
+                VStack(spacing:20){
                     ZStack{
                         Rectangle()
                             .foregroundColor(.clear)
@@ -33,42 +33,47 @@ struct QuizView: View {
                             .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                         
                             .blur(radius: 0)
+                        
+                        Text("Test questions")
+                            .frame(width: 300, height: 40, alignment: .center)
+                            .font(
+                                Font.system(  size: 35
+                                           )
+                                .weight(.bold)
+                            )
+                        
+                            .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
+                        
                         HStack{
-                            Text("Challenge questions")
-                                .frame(width: 987, height: 40, alignment: .center)
-                                .font(
-                                    Font.system(  size: 35
-                                               )
-                                    .weight(.bold)
-                                )
-                            
-                                .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                            
+                            Spacer()
                             Button(action:{
-                                                        playSound(sound:"QuizSound")
-                                                    }){
-                                                        Image(systemName: "speaker.wave.3.fill")
-                                                            .resizable()
-                                                        
-                                                            .frame(width: 40 , height: 30)
-                                                            .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                                                            .padding(3)
-                                                    }
+                                playSound(sound:"QuizSound")
+                            }){
+                                Image(systemName: "speaker.wave.3.fill")
+                                    .resizable()
+                                
+                                    .frame(width: 40 , height: 30)
+                                    .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                    .padding(3)
+                                
+                            }
                             
                             
                             NavigationLink {
                                 HomePageView()
                             } label: {
                                 
-                           
-     
+                                
+                                
                                 Image(systemName: "house.fill")
                                     .resizable()
-                                    .padding(.leading, 5.0)
+                                    .padding(.trailing, 5.0)
                                     .frame(width: 40 , height: 30)
                                     .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                    .padding(.trailing, 100)
                             }
-                        }                    }
+                        }
+                                            }
                     Spacer()
                     
                     VStack(spacing:20){
@@ -81,7 +86,7 @@ struct QuizView: View {
                                 .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                                 .cornerRadius(30)
                             VStack(spacing:50){
-                                Text(selectedAnimal.ques1)
+                                Text("1- \(selectedAnimal.ques1)")
                                     .font(Font.system(size: 35))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
@@ -211,7 +216,7 @@ struct QuizView: View {
                                 .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                                 .cornerRadius(30)
                             VStack(spacing:50){
-                                Text(selectedAnimal.ques2)
+                                Text("2- \(selectedAnimal.ques2)")
                                     .font(Font.system(size: 35))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
