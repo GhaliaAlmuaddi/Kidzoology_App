@@ -72,6 +72,7 @@
 		39997D3F2B6BD81D00229918 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 39997D3E2B6BD81D00229918 /* Localizable.xcstrings */; };
 		39997D442B6BD90100229918 /* QuizSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39997D432B6BD90100229918 /* QuizSound_ar.mp3 */; };
 		39997D462B6BD93E00229918 /* AnimalsListSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39997D452B6BD93E00229918 /* AnimalsListSound_ar.mp3 */; };
+		39BD995F2B6E3F39002D58E5 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD995E2B6E3F39002D58E5 /* Triangle.swift */; };
 		39CCBB642B66225300CE544C /* animalListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCBB632B66225300CE544C /* animalListCard.swift */; };
 		39CCBB662B66229500CE544C /* animalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCBB652B66229500CE544C /* animalsList.swift */; };
 		90BC255C2B652F3F0069186A /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255B2B652F3F0069186A /* CharactersView.swift */; };
@@ -155,6 +156,7 @@
 		39997D432B6BD90100229918 /* QuizSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QuizSound_ar.mp3; sourceTree = "<group>"; };
 		39997D452B6BD93E00229918 /* AnimalsListSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnimalsListSound_ar.mp3; sourceTree = "<group>"; };
 		39997D472B6BDDFC00229918 /* ZooSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZooSound_ar.mp3; sourceTree = "<group>"; };
+		39BD995E2B6E3F39002D58E5 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		39CCBB632B66225300CE544C /* animalListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalListCard.swift; sourceTree = "<group>"; };
 		39CCBB652B66229500CE544C /* animalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsList.swift; sourceTree = "<group>"; };
 		90BC255B2B652F3F0069186A /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				90BC255D2B652F7E0069186A /* NameView.swift */,
 				90BC255F2B652FC60069186A /* HomePageView.swift */,
 				90BC25612B65301C0069186A /* MapView.swift */,
+				39BD995E2B6E3F39002D58E5 /* Triangle.swift */,
 				90BC25652B65314D0069186A /* RahafView.swift */,
 				90BC25632B6530C90069186A /* ShomukhView.swift */,
 				90BC25672B65317F0069186A /* Model.swift */,
@@ -476,6 +479,7 @@
 				EE122E512B5F9C70009FAACD /* ContentView.swift in Sources */,
 				39CCBB642B66225300CE544C /* animalListCard.swift in Sources */,
 				29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */,
+				39BD995F2B6E3F39002D58E5 /* Triangle.swift in Sources */,
 				90BC25642B6530C90069186A /* ShomukhView.swift in Sources */,
 				90BC25682B65317F0069186A /* Model.swift in Sources */,
 				39796E262B663E0C00C35D57 /* sucessMassage.swift in Sources */,

@@ -28,21 +28,36 @@ struct MapView: View {
                 .frame(width: 139, height: 174)
                 .clipped()
             
-            NavigationLink {
-                animalsList()
+            ZStack{
+                Triangle()
+                    .fill(.orangMap)
+                    .frame(width: 36, height: 47)
+                    .padding(.top, -73)
+                    .padding(.trailing, 16)
+                
+                NavigationLink {
+                    animalsList()
+                }
+                label :{
+                    Text("Click to Start your journey").bold().lineLimit(2)
+                        .multilineTextAlignment(.center)
+                }
+                .frame(width: 150.0, height: 60.0)
+                
+                .foregroundColor(.white)
+                .background(Color.orangMap)
+                .cornerRadius(50)
+                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+                .padding(.top, -80)
+                .padding(.trailing, 182)
+                //.offset(x: -90 , y: -50)
+                
+                
             }
-            label :{
-                Text("Click to Start your journey").bold().lineLimit(2)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 150.0, height: 60.0)
-            .cornerRadius(/*@START_MENU_TOKEN@*/15.0/*@END_MENU_TOKEN@*/)
-            .foregroundColor(.white)
-            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("c2")/*@END_MENU_TOKEN@*/)
-            .border(/*@START_MENU_TOKEN@*/Color("c2")/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            .offset(x: -90 , y: -50)
+            
             
         }
+        
     }
 }
 #Preview {
