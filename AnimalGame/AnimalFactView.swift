@@ -21,7 +21,7 @@ struct AnimalFactView: View {
                 //                    .foregroundColor(.clear)
                 //                    .frame(width: 1353, height: 120)
                 //                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
-                VStack(spacing:-100){
+                VStack(spacing:-35){
                 
                 ZStack{
                     Rectangle()
@@ -154,7 +154,9 @@ struct AnimalFactView: View {
                                                 .frame(width: 400 , height: 400)
                                         }
                                         
-                                    }.frame(width: 500, height: 800 , alignment: .bottomLeading)
+                                    }
+                                    .padding(.top,100)
+                                    .padding(.leading,50)/*.frame(width: 500, height: 800 , alignment: .bottomLeading)*/
                                     
                                     VStack{
                                         ZStack{
@@ -241,7 +243,7 @@ struct AnimalFactView: View {
                                                 .foregroundColor(.brownText)
                                                 .frame(width: 500 , height: 104, alignment: .trailing)
                                         }
-                                    }//.frame(width: 1070 , alignment: .trailing)
+                                    }.padding(.trailing,50)//.frame(width: 1070 , alignment: .trailing)
                                     
                                 }
                             }}}

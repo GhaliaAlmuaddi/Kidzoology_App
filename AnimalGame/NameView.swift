@@ -80,7 +80,7 @@ struct NameView: View {
                 }
                 
                 if navigateToHomePage {
-                    HomePageView()
+                    CharactersView()
                 }
                 
             }

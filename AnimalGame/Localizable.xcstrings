@@ -16,6 +16,12 @@
     "             " : {
 
     },
+    "1- %@" : {
+
+    },
+    "2- %@" : {
+
+    },
     "9 Hours" : {
       "comment" : "Choice 2 for question 2",
       "localizations" : {
@@ -37,6 +43,9 @@
           }
         }
       }
+    },
+    "Animal Information" : {
+
     },
     "AnimalsListSound" : {
       "extractionState" : "manual",
@@ -220,6 +229,7 @@
       }
     },
     "Challenge questions" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -1054,6 +1064,9 @@
           }
         }
       }
+    },
+    "Test questions" : {
+
     },
     "The horse is fast, so it has a long leg bone. It also has a set of strong, high-crowned teeth, suited to grinding grasses and other harsh vegetation." : {
       "extractionState" : "manual",

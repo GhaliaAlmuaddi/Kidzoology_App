@@ -32,7 +32,7 @@ struct SplashView : View {
                     HomePageView()
                 }
                 else {
-                    CharactersView()
+                    NameView()
                 }
                 
             }} else {
