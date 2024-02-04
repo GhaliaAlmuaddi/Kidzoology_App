@@ -53,6 +53,7 @@
 		18FECEDC2B62584E001B566F /* AnimalFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FECEDB2B62584E001B566F /* AnimalFactView.swift */; };
 		29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5589B2B623DBF001FC793 /* QuizView.swift */; };
 		39796E262B663E0C00C35D57 /* sucessMassage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39796E252B663E0C00C35D57 /* sucessMassage.swift */; };
+		3990BEF62B7026DA00225347 /* ZooView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990BEF52B7026DA00225347 /* ZooView.swift */; };
 		3990E30B2B6CEB2700D51966 /* LizardSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E2FE2B6CEB2700D51966 /* LizardSound_ar.mp3 */; };
 		3990E30C2B6CEB2700D51966 /* SheepSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E2FF2B6CEB2700D51966 /* SheepSound_ar.mp3 */; };
 		3990E30D2B6CEB2700D51966 /* CowSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E3002B6CEB2700D51966 /* CowSound_ar.mp3 */; };
@@ -136,6 +137,7 @@
 		18FECEDB2B62584E001B566F /* AnimalFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFactView.swift; sourceTree = "<group>"; };
 		29F5589B2B623DBF001FC793 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
 		39796E252B663E0C00C35D57 /* sucessMassage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sucessMassage.swift; sourceTree = "<group>"; };
+		3990BEF52B7026DA00225347 /* ZooView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooView.swift; sourceTree = "<group>"; };
 		3990E2FE2B6CEB2700D51966 /* LizardSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LizardSound_ar.mp3; sourceTree = "<group>"; };
 		3990E2FF2B6CEB2700D51966 /* SheepSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SheepSound_ar.mp3; sourceTree = "<group>"; };
 		3990E3002B6CEB2700D51966 /* CowSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CowSound_ar.mp3; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				90BC25612B65301C0069186A /* MapView.swift */,
 				39BD995E2B6E3F39002D58E5 /* Triangle.swift */,
 				90BC25652B65314D0069186A /* RahafView.swift */,
+				3990BEF52B7026DA00225347 /* ZooView.swift */,
 				90BC25632B6530C90069186A /* ShomukhView.swift */,
 				90BC25672B65317F0069186A /* Model.swift */,
 				182EB71E2B6A344F0023046C /* SoundsModel.swift */,
@@ -489,6 +492,7 @@
 				EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */,
 				90BC256A2B6532030069186A /* SplashView.swift in Sources */,
 				90BC25662B65314D0069186A /* RahafView.swift in Sources */,
+				3990BEF62B7026DA00225347 /* ZooView.swift in Sources */,
 				182EB71F2B6A344F0023046C /* SoundsModel.swift in Sources */,
 				39CCBB662B66229500CE544C /* animalsList.swift in Sources */,
 				90BC25602B652FC60069186A /* HomePageView.swift in Sources */,
@@ -627,7 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RJGH6DGFS;
+				DEVELOPMENT_TEAM = K8ZSPJ762R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -657,7 +661,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RJGH6DGFS;
+				DEVELOPMENT_TEAM = K8ZSPJ762R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
