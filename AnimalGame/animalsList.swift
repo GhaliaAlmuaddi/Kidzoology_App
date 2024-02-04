@@ -146,7 +146,8 @@ struct animalsList: View {
                         .padding()
                     }
                 }
-                .padding(.leading,130)
+                .padding(.leading,50)
+                .padding(.trailing,50)
                 Spacer()
             }
             
