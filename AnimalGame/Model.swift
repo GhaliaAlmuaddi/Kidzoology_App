@@ -17,13 +17,16 @@ import CoreGraphics
     var animal_energy : String = ""
      var posx : CGFloat
      var posy : CGFloat
+     var Animal_drag : Bool
      
-     init(animal_name: String, animal_image: String, level: String, animal_energy: String,  posx: CGFloat , posy: CGFloat) {
+     init(animal_name: String, animal_image: String, level: String, animal_energy: String,  posx: CGFloat , posy: CGFloat,Animal_drag : Bool) {
          self.animal_name = animal_name
          self.animal_image = animal_image
          self.level = level
          self.animal_energy = animal_energy
          self.posx = posx
          self.posy = posy
+         self.Animal_drag = Animal_drag
+         
      }
 }

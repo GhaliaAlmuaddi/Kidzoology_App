@@ -24,6 +24,9 @@ struct Animals: Identifiable {
     var answer2: String
     var factSound: String
     var itSound: String
+    var posx : CGFloat
+    var posy : CGFloat
+    var Animal_drag : Bool
     
 }
 
@@ -50,7 +53,7 @@ var camel = Animals(
     ],
     answer2: NSLocalizedString("False", comment: "Answer for question 2"),
     factSound: "CamelFacts",
-    itSound: "CamelSound"
+    itSound: "CamelSound" ,  posx : 327 , posy : 271 , Animal_drag : false
 )
 
 var horse = Animals(
@@ -75,7 +78,7 @@ var horse = Animals(
     ],
     answer2: NSLocalizedString("True", comment: "Answer for question 2"),
     factSound: "HorseFacts",
-    itSound: "HorseSound"
+    itSound: "HorseSound",  posx : 929 , posy : 417 , Animal_drag : false
 )
 
 var sheep = Animals(
@@ -100,7 +103,7 @@ var sheep = Animals(
     ],
     answer2: NSLocalizedString("Wool", comment: "Answer for question 2"),
     factSound: "SheepFacts",
-    itSound: "SheepSound"
+    itSound: "SheepSound" , posx : 746 , posy : 530 , Animal_drag : false
 )
 
 var cow = Animals(
@@ -125,7 +128,7 @@ var cow = Animals(
     ],
     answer2: NSLocalizedString("Mammals", comment: "Answer for question 2"),
     factSound: "CowFacts",
-    itSound: "CowSound"
+    itSound: "CowSound" ,  posx : 571 , posy : 550 , Animal_drag : false
 )
 
 var gazelle = Animals(
@@ -150,7 +153,7 @@ var gazelle = Animals(
     ],
     answer2: NSLocalizedString("Fur", comment: "Answer for question 2"),
     factSound: "GazelleFacts",
-    itSound: "GazelleSound"
+    itSound: "GazelleSound" , posx : 822, posy : 353 , Animal_drag : false
 )
 
 var wolf = Animals(
@@ -175,7 +178,7 @@ var wolf = Animals(
     ],
     answer2: NSLocalizedString("True", comment: "Answer for question 2"),
     factSound: "WolfFacts",
-    itSound: "WolfSound"
+    itSound: "WolfSound" , posx : 837, posy : 203 , Animal_drag : false
 )
 
 
@@ -201,7 +204,7 @@ var dog = Animals(
     ],
     answer2: NSLocalizedString("Fur", comment: "Answer for question 2"),
     factSound: "DogFacts",
-    itSound: "DogSound"
+    itSound: "DogSound" , posx : 284, posy : 471 , Animal_drag : false
 )
 
 var pigeon = Animals(
@@ -226,7 +229,7 @@ var pigeon = Animals(
     ],
     answer2: NSLocalizedString("True", comment: "Answer for question 2"),
     factSound: "PigeonFacts",
-    itSound: "PigeonSound"
+    itSound: "PigeonSound" , posx : 906, posy : 571 , Animal_drag : false
 )
 
 var hawk = Animals(
@@ -251,7 +254,7 @@ var hawk = Animals(
     ],
     answer2: NSLocalizedString("Mountains", comment: "Answer for question 2"),
     factSound: "HawkFacts",
-    itSound: "HawkSound"
+    itSound: "HawkSound" , posx : 641, posy : 244 , Animal_drag : false
 )
 
 var cat = Animals(
@@ -276,7 +279,7 @@ var cat = Animals(
     ],
     answer2: NSLocalizedString("14 Hours", comment: "Answer for question 2"),
     factSound: "CatFacts",
-    itSound: "CatSound"
+    itSound: "CatSound" , posx : 186, posy : 475 , Animal_drag : false
 )
 
 var sparrows = Animals(
@@ -301,7 +304,7 @@ var sparrows = Animals(
     ],
     answer2: NSLocalizedString("Birds", comment: "Answer for question 2"),
     factSound: "BirdFacts",
-    itSound: "BirdSound"
+    itSound: "BirdSound" , posx : 1016, posy : 571 , Animal_drag : false
 )
 
 var snake = Animals(
@@ -326,7 +329,7 @@ var snake = Animals(
     ],
     answer2: NSLocalizedString("Desert", comment: "Answer for question 2"),
     factSound: "SnakeFacts",
-    itSound: "SnakeSound"
+    itSound: "SnakeSound" , posx : 153, posy : 571 , Animal_drag : false
 )
 
 var scorpion = Animals(
@@ -351,7 +354,7 @@ var scorpion = Animals(
     ],
     answer2: NSLocalizedString("Poison", comment: "Answer for question 2"),
     factSound: "ScorpionFacts",
-    itSound: ""
+    itSound: "" , posx : 246, posy : 584 , Animal_drag : false
 )
 
 
@@ -377,8 +380,9 @@ var lizard = Animals(
     ],
     answer2: NSLocalizedString("False", comment: "Answer for question 2"),
     factSound: "LizardFacts",
-    itSound: "LizardSound"
+    itSound: "LizardSound" , posx : 485, posy : 312 , Animal_drag : false
 )
+
 
 
 
