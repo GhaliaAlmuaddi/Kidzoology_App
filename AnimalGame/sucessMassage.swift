@@ -100,7 +100,7 @@ struct sucessMassage: View {
         }
     }
     func save () {
-        let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, level: "g", animal_energy: "g")
+        let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, level: "g", animal_energy: "g", posx: CGFloat(0.0), posy: CGFloat(0.0))
  //        //تعبينها بالبيانات الي جاتك من المودل
  //    حطيت اشياء عشوائيه عشان اجرب
  //

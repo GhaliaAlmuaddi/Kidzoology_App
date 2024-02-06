@@ -157,7 +157,9 @@ struct ZooView: View {
                               Circle()
                                   .fill(Color.c1)
                                   .frame(width: 100, height: 100)
-                                  .position(x: 327, y: 271)
+                              //x: 327, y: 271
+                              //getPositionForAnimal(animalName: animal.animal_name)
+                                  .position(x : 327, y: 271)
                                   .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
                                       // Check if the dropped item is an image
                                       guard let provider = providers.first else {
@@ -171,7 +173,7 @@ struct ZooView: View {
                                                   let droppedImage = Image(uiImage: image)
                                                   // Store the dropped image for Camel
                                                   droppedImages["Camel"] = droppedImage
-                                                  
+                                                  updateAnimalPosition(animalName: animal.animal_name, offsetX: location.x, offsetY: location.y)
                                               }else{
                                                   
                                                   
@@ -195,453 +197,57 @@ struct ZooView: View {
                                               .position(x: 327, y: 271)
                                       }
                                   )
-                          } else if animal.animal_name == "Horse" {//hours 2
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 929, y: 417)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Horse"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Horse"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 929, y: 417)
-                                      }
-                                  )
-                          } else if animal.animal_name == "Sheep" {//Sheep3
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 746, y: 530)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Sheep"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Sheep"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 746, y: 530)
-                                      }
-                                  )
-                          }//end
-                          else if animal.animal_name == "Cow" {//Cow4
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 571, y: 550)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Cow"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Cow"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 571, y: 550)
-                                      }
-                                  )
-                          }
-                          //end
-                          else if animal.animal_name == "Gazelle" {//Gazelle5
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 822, y: 353)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Gazelle"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Gazelle"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 822, y: 353)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Wolf" {//Wolf6
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 837, y: 203)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Wolf"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Wolf"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 837, y: 203)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Dog" {//Dog7
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 284, y: 471)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Dog"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Dog"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 284, y: 471)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Pigeon" {//Pigeon8
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 906, y: 571)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Pigeon"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Pigeon"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 906, y: 571)
-                                      }
-                                  )
-                          }//
-                          else if animal.animal_name == "Hawk" {//Hawk9
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 641, y: 244)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Hawk"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Hawk"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 641, y: 244)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Cat" {//Cat10
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 186, y: 475)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Cat"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Cat"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 186, y: 475)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Sparrow" {//Pigeon11
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 1016, y: 571)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Sparrow"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Sparrow"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 1016, y: 571)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Snake" {//Snake12
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 153, y: 571)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Snake"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Snake"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 153, y: 571)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Scorpion" {//Scorpion13
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 246, y: 584)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Scorpion"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Scorpion"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 246, y: 584)
-                                      }
-                                  )
-                          }
-                          else if animal.animal_name == "Lizard" {//Lizard14
-                              Circle()
-                                  .fill(Color.c1)
-                                  .frame(width: 100, height: 100)
-                                  .position(x: 485, y: 312)
-                                  .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                      // Check if the dropped item is an image
-                                      guard let provider = providers.first else {
-                                          return false
-                                      }
-                                      // Check if the provider can load an object of the specified type
-                                      if provider.canLoadObject(ofClass: UIImage.self) {
-                                          _ = provider.loadObject(ofClass: UIImage.self) { image, error in
-                                              if let image = image as? UIImage {
-                                                  // Convert UIImage to SwiftUI's Image
-                                                  let droppedImage = Image(uiImage: image)
-                                                  // Store the dropped image for Horse
-                                                  droppedImages["Lizard"] = droppedImage
-                                              }
-                                          }
-                                      }
-                                      // Return true to indicate that the drop is accepted
-                                      return true
-                                  }
-                                  .overlay(
-                                      // Display the dropped image if available
-                                      droppedImages["Lizard"].map {
-                                          $0.resizable()
-                                              .scaledToFit()
-                                              .frame(width: 80, height: 80)
-                                              .position(x: 485, y: 312)
-                                      }
-                                  )
                           }
                       }
 
               }
           }.navigationBarBackButtonHidden(true)
+            .onAppear {
+                fetchanimal()
+               
+            }
     }
+    
+    func fetchanimal(){
+        let fetchDescriptor = FetchDescriptor<Kid_animal>()
+
+        do {
+            let animals = try context.fetch(fetchDescriptor)
+
+            for animal in animals {
+                print("Found \(animal.animal_name)")
+            }
+        } catch {
+            print("Failed to load Movie model.")
+        }
+    }
+
+    
+    func getPositionForAnimal(animalName: String) -> CGPoint {
+           if let animalPosition = OwnAnimal.first(where: { $0.animal_name == animalName }) {
+               return CGPoint(x: animalPosition.posx, y: animalPosition.posy)
+           } else {
+               
+               return CGPoint(x: 327, y: 271)
+           }
+       }
+    
+    func updateAnimalPosition(animalName: String, offsetX: CGFloat, offsetY: CGFloat) {
+           if let index = OwnAnimal.firstIndex(where: { $0.animal_name == animalName }) {
+               OwnAnimal[index].posx = CGFloat(offsetX)
+               OwnAnimal[index].posy = CGFloat(offsetY)
+               print(OwnAnimal[index].posy)
+           } else {
+               let Own_animal = Kid_animal(animal_name: animalName, animal_image: "6", level: "g", animal_energy: "g", posx:  offsetX, posy:  offsetY)
+               
+               
+               context.insert(Own_animal)
+               
+           }
+           
+         
+          
+       }
 }
 
 #Preview {
