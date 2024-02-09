@@ -25,84 +25,92 @@ struct ZooView: View {
     
     var body: some View {
         NavigationStack{
+            Text("")
+                       
+                       
+                           
+                           .toolbar {
+                               ToolbarItem(placement: .principal) {
+                                       VStack {
+                                           Text("My Zoo")
+                                               .bold()
+                                               .foregroundColor(.brownText)
+                                       }
+                                   }
+                               ToolbarItemGroup(placement: .primaryAction) {
+                                   Button(action:{
+                                       playSound(sound:"ZooSound")
+                                   }){
+                                       Image(systemName: "speaker.wave.3.fill")
+                                           .resizable()
+                                       
+                                           .frame(width: 40 , height: 30)
+                                       .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))}
+                                   
+                                   NavigationLink {
+                                                               HomePageView()
+                                                           } label: {
+                                   
+                                                               Image(systemName: "house.fill")
+                                                                   .resizable()
+                                                                   .padding(.trailing, 5.0)
+                                                                   .frame(width: 40 , height: 30)
+                                                                   .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }
+
+                                                       }
+                               ToolbarItem(placement: .navigationBarLeading) {
+                                   HStack{
+                                       
+                                       
+                                       ZStack{
+                                           Rectangle()
+                                               .foregroundColor(.clear)
+                                               .frame(width: 180, height: 50)
+                                               .background(Color(red: 0.75, green: 0.87, blue: 0.73))
+                                               .cornerRadius(50)
+                                           HStack{
+                                               
+                                               
+                                               
+                                               Image(currentImage)
+                                                   .resizable() // Make the image resizable
+                                                   .frame(width: 56, height: 50)
+                                               
+                                               Text(Currentname)
+                                                   .font(Font.custom("Inter", size: 25).weight(.bold))
+                                                   .lineSpacing(22)
+                                                   .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
+                                           }
+                                           
+                                       }
+                                       .padding(.bottom, 19)
+     
+                                   }
+                               }
+                               
+                           }
+            
+           
+                       
+                           .toolbarBackground(
+
+                               
+                               Color.lightBackground,
+                               
+                               for: .navigationBar)
+                           .toolbarBackground(.visible, for: .navigationBar)
+                           .navigationBarTitleDisplayMode(.inline)
             ZStack{
                 Image("zoo")
                     .resizable()
                     .frame(width: 1200, height: 840)
                 VStack(spacing: -10){
                     ZStack{
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 1190, height: 95)
-                            .background(Color(red: 0.95, green: 0.98, blue: 0.98))
+                       
                         
-                            .blur(radius: 0)
-                        
-                        
-                        Text("Drag your animals into your zoo")
-                            .frame(width: 987, height: 40, alignment: .center)
-                            .font(
-                                Font.system(  size: 35
-                                           )
-                                .weight(.bold)
-                            )
-                        
-                            .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                        HStack{
                             
-                            
-                            ZStack{
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 177, height: 69)
-                                    .background(Color(red: 0.75, green: 0.87, blue: 0.73))
-                                    .cornerRadius(50)
-                                HStack{
-                                    
-                                    
-                                    
-                                    Image(currentImage)
-                                        .resizable() // Make the image resizable
-                                        .frame(width: 56, height: 62)
-                                    
-                                    Text(Currentname)
-                                        .font(Font.custom("Inter", size: 25).weight(.bold))
-                                        .lineSpacing(22)
-                                        .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                                }
-                                
-                            }
-                            .padding()
-                            
-                            
-                            Spacer()
-                            Button(action:{
-                                playSound(sound:"ZooSound")
-                            }){
-                                Image(systemName: "speaker.wave.3.fill")
-                                    .resizable()
-                                
-                                    .frame(width: 40 , height: 30)
-                                    .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                                    .padding(3)
-                            }
-                            
-                            
-                            NavigationLink {
-                                HomePageView()
-                            } label: {
-                                
-                                Image(systemName: "house.fill")
-                                    .resizable()
-                                    .padding(.trailing, 5.0)
-                                    .frame(width: 40 , height: 30)
-                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                            }
-                            
-                            .padding(.trailing)
-                            
-                            
-                        }
+                    
                         
                     }
                     Spacer()
@@ -114,12 +122,7 @@ struct ZooView: View {
                             
                                 .cornerRadius(30)
                                 .blur(radius: 0)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .resizable()
-                            
-                                .frame(width: 36 , height: 43)
-                                .foregroundColor(Color.white)
+                           
                             
                         }
                         .padding()

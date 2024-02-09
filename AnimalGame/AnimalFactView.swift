@@ -4,7 +4,7 @@
 //
 //  Created by Maryam Mohammad on 13/07/1445 AH.
 //
-
+//  playSound(sound: animalinfo.factSound)
 import SwiftUI
 import AVFoundation
 
@@ -13,7 +13,66 @@ struct AnimalFactView: View {
     let animalinfo: Animals
     var body: some View {
         NavigationStack{
-         
+            Text("")
+                       
+                           
+                       
+           
+                           .toolbar {
+                               ToolbarItem(placement: .principal) {
+                                       VStack {
+                                           Text(" Animal Information")
+                                               .bold()
+                                               .foregroundColor(.brownText)
+                                       }
+                                   }
+                               ToolbarItemGroup(placement: .primaryAction) {
+                                   Button(action:{
+                                       playSound(sound: animalinfo.factSound)
+                                   }){
+                                       Image(systemName: "speaker.wave.3.fill")
+                                           .resizable()
+                                       
+                                           .frame(width: 40 , height: 30)
+                                       .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))}
+                                   
+                                   NavigationLink {
+                                                               HomePageView()
+                                                           } label: {
+                                   
+                                                               Image(systemName: "house.fill")
+                                                                   .resizable()
+                                                                   .padding(.trailing, 5.0)
+                                                                   .frame(width: 40 , height: 30)
+                                                                   .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }
+
+                                                       }
+                               
+                               ToolbarItem(placement: .navigationBarLeading) {
+                                   NavigationLink {
+                                   
+                                                                        MapView()
+                                   
+                                                                } label: {
+                                   
+                                                                        Image(systemName: "arrow.backward")
+                                                                            .resizable()
+                                                                            .padding(.leading, 5.0)
+                                                                            .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                   
+                                 }
+                               }
+                           }
+                       
+                           .toolbarBackground(
+
+                               
+                               Color.lightBackground,
+                               
+                               for: .navigationBar)
+                           .toolbarBackground(.visible, for: .navigationBar)
+                           .navigationBarTitleDisplayMode(.inline)
             ZStack{
                 
                 Color("backgroundColor").ignoresSafeArea()
@@ -22,76 +81,7 @@ struct AnimalFactView: View {
                 //                    .frame(width: 1353, height: 120)
                 //                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                 VStack(spacing:-35){
-                
-                ZStack{
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 1190, height: 95)
-                        .background(Color(red: 0.95, green: 0.98, blue: 0.98))
-                    
-                        .blur(radius: 0)
-                    
-                    
-                    Text("Animal Information")
-                        .frame(width: 500, height: 40, alignment: .center)
-                        .font(
-                            Font.system(  size: 35
-                                       )
-                            .weight(.bold)
-                        )
-                    
-                        .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                    
-                    HStack{
-                        
-                        NavigationLink {
-                            
-                            animalsList()
-                            
-                        } label: {
-                            
-                            Image(systemName: "arrow.backward")
-                                .resizable()
-                                .padding(.leading, 5.0)
-                                .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                            
-                        }/*.padding(.leading,-20)*/
-                        
-                        // Spacer()
-                        .padding()
-                        Spacer()
-                        
-                        Button(action:{
-                            playSound(sound: animalinfo.factSound)
-                        }){
-                            Image(systemName: "speaker.wave.3.fill")
-                                .resizable()
-                            
-                                .frame(width: 40 , height: 30)
-                                .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                                .padding(3)
-                            
-                        }
-                        
-                        NavigationLink {
-                            HomePageView()
-                        } label: {
-                            
-                            Image(systemName: "house.fill")
-                                .resizable()
-                                .padding(.trailing, 5.0)
-                                .frame(width: 40 , height: 30)
-                                .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                        }
-                        
-                        .padding(.trailing)
-                        
-                        
-                    }}
-                
-                    /*.frame(width: 1099.9 , height: 750 , alignment: .topTrailing)*/
-                        .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                       // .padding(.top , -330)
+    
                 
                     ZStack{
                         Rectangle()

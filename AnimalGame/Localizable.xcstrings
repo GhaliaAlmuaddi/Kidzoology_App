@@ -16,6 +16,9 @@
     "             " : {
 
     },
+    " Animal Information" : {
+
+    },
     "1- %@" : {
 
     },
@@ -43,9 +46,6 @@
           }
         }
       }
-    },
-    "Animal Information" : {
-
     },
     "AnimalsListSound" : {
       "extractionState" : "manual",

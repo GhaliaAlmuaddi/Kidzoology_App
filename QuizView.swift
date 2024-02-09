@@ -22,58 +22,56 @@ struct QuizView: View {
     
     var body: some View {
         NavigationStack{
+            Text("")
+ 
+                           .toolbar {
+                               ToolbarItem(placement: .principal) {
+                                       VStack {
+                                           Text("Test questions")
+                                               .bold()
+                                               .foregroundColor(.brownText)
+                                       }
+                                   }
+                               ToolbarItemGroup(placement: .primaryAction) {
+                                   Button(action:{
+                                                                                       playSound(sound:"QuizSound")
+                                   }){
+                                       Image(systemName: "speaker.wave.3.fill")
+                                           .resizable()
+                                       
+                                           .frame(width: 40 , height: 30)
+                                       .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))}
+                                   
+                                   NavigationLink {
+                                                               HomePageView()
+                                                           } label: {
+                                   
+                                                               Image(systemName: "house.fill")
+                                                                   .resizable()
+                                                                   .padding(.trailing, 5.0)
+                                                                   .frame(width: 40 , height: 30)
+                                                                   .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }
+
+                                                       }
+                               
+                               
+                           }
+                           
+                           .toolbarBackground(
+
+                               
+                               Color.lightBackground,
+                               
+                               for: .navigationBar)
+                           .toolbarBackground(.visible, for: .navigationBar)
+                           .navigationBarTitleDisplayMode(.inline)
+            
             ZStack{
                 Color("backgroundColor")
                     .ignoresSafeArea()
                 VStack(spacing:20){
-                    ZStack{
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(width: 1353, height: 95)
-                            .background(Color(red: 0.95, green: 0.98, blue: 0.98))
-                        
-                            .blur(radius: 0)
-                        
-                        Text("Test questions")
-                            .frame(width: 300, height: 40, alignment: .center)
-                            .font(
-                                Font.system(  size: 35
-                                           )
-                                .weight(.bold)
-                            )
-                        
-                            .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                        
-                        HStack{
-                            Spacer()
-                            Button(action:{
-                                playSound(sound:"QuizSound")
-                            }){
-                                Image(systemName: "speaker.wave.3.fill")
-                                    .resizable()
-                                
-                                    .frame(width: 40 , height: 30)
-                                    .foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                                    .padding(3)
-                                
-                            }
-                            
-                            
-                            NavigationLink {
-                                HomePageView()
-                            } label: {
-                                
-                                
-                                
-                                Image(systemName: "house.fill")
-                                    .resizable()
-                                    .padding(.trailing, 5.0)
-                                    .frame(width: 40 , height: 30)
-                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
-                                    .padding(.trailing, 100)
-                            }
-                        }
-                                            }
+                 
                     Spacer()
                     
                     VStack(spacing:20){
@@ -380,7 +378,9 @@ struct QuizView: View {
                 }}
             
             //}
+            
         }.navigationBarBackButtonHidden(true)
+            
         
         
     }}
