@@ -35,6 +35,8 @@
 		182EB7702B6A49530023046C /* HawkSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EB7632B6A49520023046C /* HawkSound.mp3 */; };
 		182EB7712B6A49530023046C /* WolfSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EB7642B6A49530023046C /* WolfSound.mp3 */; };
 		182EB7722B6A49530023046C /* LizardSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EB7652B6A49530023046C /* LizardSound.mp3 */; };
+		18A2BDF42B77B37C00C947DD /* ScorpionSaound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18A2BDF32B77B37C00C947DD /* ScorpionSaound.mp3 */; };
+		18A2BDF62B77B3B200C947DD /* ScorpionSaound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18A2BDF52B77B3B200C947DD /* ScorpionSaound_ar.mp3 */; };
 		18EE74762B6BFE750048E68B /* PigeonFacts_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18EE74682B6BFE750048E68B /* PigeonFacts_ar.mp3 */; };
 		18EE74772B6BFE750048E68B /* HawkFacts_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18EE74692B6BFE750048E68B /* HawkFacts_ar.mp3 */; };
 		18EE74782B6BFE750048E68B /* DogFacts_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18EE746A2B6BFE750048E68B /* DogFacts_ar.mp3 */; };
@@ -118,6 +120,8 @@
 		182EB7632B6A49520023046C /* HawkSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HawkSound.mp3; sourceTree = "<group>"; };
 		182EB7642B6A49530023046C /* WolfSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WolfSound.mp3; sourceTree = "<group>"; };
 		182EB7652B6A49530023046C /* LizardSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LizardSound.mp3; sourceTree = "<group>"; };
+		18A2BDF32B77B37C00C947DD /* ScorpionSaound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ScorpionSaound.mp3; sourceTree = "<group>"; };
+		18A2BDF52B77B3B200C947DD /* ScorpionSaound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ScorpionSaound_ar.mp3; sourceTree = "<group>"; };
 		18EE74682B6BFE750048E68B /* PigeonFacts_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PigeonFacts_ar.mp3; sourceTree = "<group>"; };
 		18EE74692B6BFE750048E68B /* HawkFacts_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HawkFacts_ar.mp3; sourceTree = "<group>"; };
 		18EE746A2B6BFE750048E68B /* DogFacts_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DogFacts_ar.mp3; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				182EB7632B6A49520023046C /* HawkSound.mp3 */,
 				182EB75F2B6A49520023046C /* HorseSound.mp3 */,
 				182EB7652B6A49530023046C /* LizardSound.mp3 */,
+				18A2BDF32B77B37C00C947DD /* ScorpionSaound.mp3 */,
 				182EB75A2B6A49520023046C /* PigeonSound.mp3 */,
 				182EB75C2B6A49520023046C /* SheepSound.mp3 */,
 				182EB75E2B6A49520023046C /* SnakeSound.mp3 */,
@@ -263,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				3990E3062B6CEB2700D51966 /* BirdSound_ar.mp3 */,
+				18A2BDF52B77B3B200C947DD /* ScorpionSaound_ar.mp3 */,
 				3990E30A2B6CEB2700D51966 /* CamelSound_ar.mp3 */,
 				3990E3022B6CEB2700D51966 /* CatSound_ar.mp3 */,
 				3990E3002B6CEB2700D51966 /* CowSound_ar.mp3 */,
@@ -420,6 +426,7 @@
 				182EB7522B6A441A0023046C /* CatFacts.mp3 in Resources */,
 				182EB74E2B6A441A0023046C /* ScorpionFacts.mp3 in Resources */,
 				3990E3102B6CEB2700D51966 /* PigeonSound_ar.mp3 in Resources */,
+				18A2BDF42B77B37C00C947DD /* ScorpionSaound.mp3 in Resources */,
 				182EB74C2B6A441A0023046C /* LizardFacts.mp3 in Resources */,
 				39997D442B6BD90100229918 /* QuizSound_ar.mp3 in Resources */,
 				182EB7702B6A49530023046C /* HawkSound.mp3 in Resources */,
@@ -463,6 +470,7 @@
 				3990E3122B6CEB2700D51966 /* WolfSound_ar.mp3 in Resources */,
 				182EB7532B6A441A0023046C /* HawkFacts.mp3 in Resources */,
 				182EB76D2B6A49530023046C /* CamelSound.mp3 in Resources */,
+				18A2BDF62B77B3B200C947DD /* ScorpionSaound_ar.mp3 in Resources */,
 				3990E3172B6CEB2700D51966 /* CamelSound_ar.mp3 in Resources */,
 				3990E3142B6CEB2700D51966 /* GazelleSound_ar.mp3 in Resources */,
 				3990E3152B6CEB2700D51966 /* HawkSound_ar.mp3 in Resources */,
@@ -627,7 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
-				DEVELOPMENT_TEAM = K8ZSPJ762R;
+				DEVELOPMENT_TEAM = 4RJGH6DGFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -641,7 +649,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame;
+				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame.Team2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -657,7 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
-				DEVELOPMENT_TEAM = K8ZSPJ762R;
+				DEVELOPMENT_TEAM = 4RJGH6DGFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -671,7 +679,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame;
+				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame.Team2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

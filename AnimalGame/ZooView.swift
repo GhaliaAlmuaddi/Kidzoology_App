@@ -56,6 +56,8 @@ struct ZooView: View {
                                                                    .padding(.trailing, 5.0)
                                                                    .frame(width: 40 , height: 30)
                                                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }.onDisappear {
+                                                               stopAudio()
                                                            }
 
                                                        }

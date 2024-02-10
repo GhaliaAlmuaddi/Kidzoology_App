@@ -354,7 +354,7 @@ var scorpion = Animals(
     ],
     answer2: NSLocalizedString("Poison", comment: "Answer for question 2"),
     factSound: "ScorpionFacts",
-    itSound: "" , posx : 246, posy : 584 , Animal_drag : false
+    itSound: "ScorpionSaound" , posx : 246, posy : 584 , Animal_drag : false
 )
 
 

@@ -45,6 +45,8 @@ struct AnimalFactView: View {
                                                                    .padding(.trailing, 5.0)
                                                                    .frame(width: 40 , height: 30)
                                                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }.onDisappear {
+                                                               stopAudio()
                                                            }
 
                                                        }
@@ -61,6 +63,8 @@ struct AnimalFactView: View {
                                                                             .padding(.leading, 5.0)
                                                                             .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
                                    
+                                 }.onDisappear {
+                                     stopAudio()
                                  }
                                }
                            }
@@ -120,6 +124,8 @@ struct AnimalFactView: View {
                                     .frame(width: 319, alignment: .center)
                             }/*.frame(width: 900 , height: 750 , alignment: .bottomTrailing)*/
                             .padding([.top, .leading], 650)
+                        }.onDisappear {
+                            stopAudio()
                         }
                         
                         

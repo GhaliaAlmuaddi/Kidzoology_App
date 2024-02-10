@@ -41,6 +41,8 @@ struct animalsList: View {
                                                                    .padding(.trailing, 5.0)
                                                                    .frame(width: 40 , height: 30)
                                                                    .foregroundColor(Color(red: 1, green: 0.56, blue: 0.27))
+                                                           }.onDisappear {
+                                                               stopAudio()
                                                            }
 
                                                        }
@@ -57,6 +59,8 @@ struct animalsList: View {
                                                                             .padding(.leading, 5.0)
                                                                             .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
                                    
+                                 }.onDisappear {
+                                     stopAudio()
                                  }
                                }
                            }
@@ -102,6 +106,8 @@ struct animalsList: View {
                                         }
                                         
                                     }
+                                }.onDisappear {
+                                    stopAudio()
                                 }
                             }
                             
