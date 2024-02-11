@@ -12,6 +12,7 @@ struct animalsList: View {
     
     var body: some View {
         NavigationStack{
+           
             Text("")
      
                            .toolbar {

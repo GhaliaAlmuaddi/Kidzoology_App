@@ -22,7 +22,8 @@ struct QuizView: View {
     
     var body: some View {
         NavigationStack{
-            Text("")
+            Color("backgroundColor")
+         //   Text("")
  
                            .toolbar {
                                ToolbarItem(placement: .principal) {

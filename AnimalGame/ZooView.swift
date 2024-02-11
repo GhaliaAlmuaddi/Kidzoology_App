@@ -133,19 +133,20 @@ struct ZooView: View {
                             HStack(spacing: 10) { // Adjust spacing between images as needed
                                 ForEach(OwnAnimal, id: \.self) { animal in
                                     VStack {
-                                        Image(animal.animal_image)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                        
-                                            .frame(width: 100, height: 100) // Adjust the size as needed
-                                        //Text("done")
-                                            .draggable(Image(animal.animal_image))
-                                        
+                                        if (animal.Animal_drag == false){
+                                            Image(animal.animal_image)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                            
+                                                .frame(width: 100, height: 100) // Adjust the size as needed
+                                            //Text("done")
+                                                .draggable(Image(animal.animal_image))
+                                            
+                                        }
                                     }
-                                }
-                                
-                                
-                            }
+                                    
+                                    
+                                }}
                             
                             
                         }
