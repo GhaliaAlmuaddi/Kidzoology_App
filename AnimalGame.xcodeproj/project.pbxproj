@@ -86,7 +86,6 @@
 		90BC25682B65317F0069186A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25672B65317F0069186A /* Model.swift */; };
 		90BC256A2B6532030069186A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25692B6532030069186A /* SplashView.swift */; };
 		EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */; };
-		EE122E512B5F9C70009FAACD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E502B5F9C70009FAACD /* ContentView.swift */; };
 		EE122E532B5F9C71009FAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE122E522B5F9C71009FAACD /* Assets.xcassets */; };
 		EE122E562B5F9C71009FAACD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE122E552B5F9C71009FAACD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -173,7 +172,6 @@
 		90BC25692B6532030069186A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EE122E4B2B5F9C70009FAACD /* AnimalGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGameApp.swift; sourceTree = "<group>"; };
-		EE122E502B5F9C70009FAACD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE122E522B5F9C71009FAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE122E552B5F9C71009FAACD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -324,7 +322,6 @@
 				39796E252B663E0C00C35D57 /* sucessMassage.swift */,
 				EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */,
 				90BC25692B6532030069186A /* SplashView.swift */,
-				EE122E502B5F9C70009FAACD /* ContentView.swift */,
 				18FECEDB2B62584E001B566F /* AnimalFactView.swift */,
 				90BC255B2B652F3F0069186A /* CharactersView.swift */,
 				90BC255D2B652F7E0069186A /* NameView.swift */,
@@ -484,7 +481,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE122E512B5F9C70009FAACD /* ContentView.swift in Sources */,
 				39CCBB642B66225300CE544C /* animalListCard.swift in Sources */,
 				29F5589C2B623DBF001FC793 /* QuizView.swift in Sources */,
 				39BD995F2B6E3F39002D58E5 /* Triangle.swift in Sources */,

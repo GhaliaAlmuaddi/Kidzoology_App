@@ -19,7 +19,7 @@ struct CharactersView: View {
     
     var body: some View {
         
-      //  NavigationStack {
+      
             ZStack {
                 Color("backgroundColor").ignoresSafeArea()
                 RoundedRectangle(cornerRadius: 30).frame(width: 758, height: 479).foregroundStyle(Color(red: 0.95, green: 0.98, blue: 0.98))
@@ -30,7 +30,7 @@ struct CharactersView: View {
                         .font(
                             Font.system(size: 40).bold()
                         )
-                    //  .multilineTextAlignment(.center)
+                   
                         .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                         .frame(width: 433, height: 51)
                     HStack {
@@ -110,9 +110,9 @@ struct CharactersView: View {
                 
                 
                 if HomepageIn {
-                    // NavigationLink(destination: NameView(), label: { self })
+                   
                     NameView()  }}
-        //}
+       
         
     }
 }

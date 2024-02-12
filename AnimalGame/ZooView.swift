@@ -11,9 +11,9 @@ import SwiftData
 import UniformTypeIdentifiers
 
 struct ZooView: View {
-    // @State private var fruitOffset = CGSize.zero
+
     @Environment(\.modelContext) var context
-    @Query var OwnAnimal : [Kid_animal] //هذي اري بيكون فيها كل الحيوانات الي فاز فيهم الطفل وتخزنو من صفحة شموخ، تحتاجين  تعرضين البيانات منها زي صور الحيوانات بالسكرول
+    @Query var OwnAnimal : [Kid_animal]
     @AppStorage("imageKid") var currentImage: String = ""
     @AppStorage("Kid_name") var Currentname : String = ""
     
@@ -25,6 +25,7 @@ struct ZooView: View {
     
     var body: some View {
         NavigationStack{
+        
             Text("")
                        
                        
@@ -76,17 +77,17 @@ struct ZooView: View {
                                                
                                                
                                                Image(currentImage)
-                                                   .resizable() // Make the image resizable
+                                                   .resizable()
                                                    .frame(width: 56, height: 50)
-                                               
+                                               Spacer()
                                                Text(Currentname)
-                                                   .font(Font.custom("Inter", size: 25).weight(.bold))
+                                                   .font(Font.custom("Inter", size: 20))
                                                    .lineSpacing(22)
                                                    .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                            }
-                                           
+                                           .padding()
                                        }
-                                       .padding(.bottom, 19)
+                                       .padding(.bottom, 10)
      
                                    }
                                }
@@ -108,13 +109,7 @@ struct ZooView: View {
                     .resizable()
                     .frame(width: 1200, height: 840)
                 VStack(spacing: -10){
-                    ZStack{
-                       
-                        
-                            
-                    
-                        
-                    }
+                   
                     Spacer()
                     ZStack{
                         HStack{
@@ -130,7 +125,7 @@ struct ZooView: View {
                         .padding()
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 10) { // Adjust spacing between images as needed
+                            HStack(spacing: 10) {
                                 ForEach(OwnAnimal, id: \.self) { animal in
                                     VStack {
                                         if (animal.Animal_drag == false){
@@ -138,8 +133,7 @@ struct ZooView: View {
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fit)
                                             
-                                                .frame(width: 100, height: 100) // Adjust the size as needed
-                                            //Text("done")
+                                                .frame(width: 100, height: 100)
                                                 .draggable(Image(animal.animal_image))
                                             
                                         }
@@ -159,7 +153,7 @@ struct ZooView: View {
                 
                 
                 ForEach(OwnAnimal, id: \.self) { animal in
-                    if animal.animal_name == "Camel" {//camel 1
+                    if animal.animal_name == "Camel" {
                         
                         if animal.Animal_drag == true
                         {
@@ -173,27 +167,25 @@ struct ZooView: View {
                             Circle()
                                 .fill(Color.c1)
                                 .frame(width: 100, height: 100)
-                            //x: 327, y: 271
-                            //getPositionForAnimal(animalName: animal.animal_name)
+                            
                                 .position(x : 327, y: 271)
                                 .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
-                                    // Check if the dropped item is an image
+                                    
                                     guard let provider = providers.first else {
                                         return false
                                     }
-                                    // Check if the provider can load an object of the specified type
+                                    
                                     if provider.canLoadObject(ofClass: UIImage.self) {
                                         _ = provider.loadObject(ofClass: UIImage.self) { image, error in
                                             if let image = image as? UIImage {
-                                                // Convert UIImage to SwiftUI's Image
+                                               
                                                 let droppedImage = Image(uiImage: image)
-                                                // Store the dropped image for Camel
-                                                //                                                  droppedImages["Camel"] = droppedImage
-                                                //                                                  updateAnimalPosition(animalName: animal.animal_name, offsetX: location.x, offsetY: location.y)
+                                                                                                 droppedImages["Camel"] = droppedImage
+                                              
                                             }else{
                                                 
                                                 
-                                                // Return the image to its original rotation after shaking
+                                                
                                                 withAnimation(Animation.easeInOut(duration: 0.2)) {
                                                     droppedImages["Camel"] = nil
                                                 }
@@ -201,13 +193,13 @@ struct ZooView: View {
                                             
                                         }
                                     }
-                                    // Return true to indicate that the drop is accepted
+                                  
                                     animal.Animal_drag = true
                                     return true
                                     
                                 }
                                 .overlay(
-                                    // Display the dropped image if available
+                                    
                                     droppedImages["Camel"].map {
                                         $0.resizable()
                                             .scaledToFit()
@@ -224,50 +216,10 @@ struct ZooView: View {
                 }
             }
         }.navigationBarBackButtonHidden(true)
-//            .onAppear {
-//                fetchanimal()
-//                
-//            }
+
     }
     
-//    func fetchanimal(){
-//        let fetchDescriptor = FetchDescriptor<Kid_animal>()
-//        
-//        do {
-//            let animals = try context.fetch(fetchDescriptor)
-//            
-//            for animal in animals {
-//                print("Found \(animal.animal_name)")
-//            }
-//        } catch {
-//            print("Failed to load Movie model.")
-//        }
-//    }
-    
-    
-//    func getPositionForAnimal(animalName: String) -> CGPoint {
-//        if let animalPosition = OwnAnimal.first(where: { $0.animal_name == animalName }) {
-//            return CGPoint(x: animalPosition.posx, y: animalPosition.posy)
-//        } else {
-//            
-//            return CGPoint(x: 327, y: 271)
-//        }
-//    }
-    
-    //    func updateAnimalPosition(animalName: String, offsetX: CGFloat, offsetY: CGFloat) {
-    //            let index = OwnAnimal.firstIndex(where: { $0.animal_name == animalName }) {
-    //               OwnAnimal[index].posx = CGFloat(offsetX)
-    //               OwnAnimal[index].posy = CGFloat(offsetY)
-    //               print(OwnAnimal[index].posy)
-    ////           } else {
-    ////               let Own_animal = Kid_animal(animal_name: animalName, animal_image: "6", level: "g", animal_energy: "g", posx:  offsetX, posy:  offsetY, Animal_drag: <#Bool#>)
-    ////
-    ////
-    ////               context.insert(Own_animal)
-    ////
-    ////           }
-    //       }
-    //}
+
 }
 #Preview {
     ZooView()

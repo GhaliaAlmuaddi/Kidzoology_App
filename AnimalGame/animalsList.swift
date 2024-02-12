@@ -12,8 +12,8 @@ struct animalsList: View {
     
     var body: some View {
         NavigationStack{
-           
-            Text("")
+            Color("backgroundColor")
+            
      
                            .toolbar {
                                ToolbarItem(placement: .principal) {
@@ -77,9 +77,9 @@ struct animalsList: View {
         ZStack{
             Color("backgroundColor")
                 .ignoresSafeArea()
-            VStack{
+            VStack(spacing: 100){
                 
-                
+                Spacer()
                 ScrollView(.horizontal){
                     VStack(spacing: 40){
                         HStack(spacing:40){
@@ -153,7 +153,7 @@ struct animalsList: View {
                 .scrollIndicators(.hidden)
                 Spacer()
             }
-            .padding(.top, 100)
+            
         }
         }.navigationBarBackButtonHidden(true)
     }

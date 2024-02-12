@@ -22,12 +22,12 @@ struct NameView: View {
             
             VStack {
                 Text("\n\n")
-                // Text("welcome\(currentImage)")
+                
                 Text("Enter your name ")
                     .font(
                         Font.system(size: 40).bold()
                     )
-                //  .multilineTextAlignment(.center)
+                
                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                 Text(" ")
                 
@@ -67,7 +67,7 @@ struct NameView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(.white)
                         
-                        //.frame(width: 319, alignment: .center)
+                        
                     }
                     .padding(50)
                     
@@ -89,7 +89,7 @@ struct NameView: View {
     }
     private func hideKeyboard() {
          UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-         // Perform any other actions needed when the button is tapped
+         
      }
  }
 

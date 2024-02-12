@@ -17,7 +17,7 @@ struct SplashView : View {
     
     @AppStorage("Kid_name") var Currentname : String?
     @AppStorage("imageKid") var currentImage: String?
-    //  @AppStorage("imageKid") var currentImage: String = ""
+   
     
     
     
@@ -42,7 +42,7 @@ struct SplashView : View {
                         .edgesIgnoringSafeArea(.all)
                     
                     VStack{
-                        //LOGO START HERE
+                        
                         Image("applogo")
                             .resizable()
                             .scaledToFit()
@@ -51,7 +51,7 @@ struct SplashView : View {
                         
                         
                         
-                        // animation starts here
+                      
                             .scaleEffect(size)
                             .opacity(opacity)
                             .onAppear{
@@ -60,9 +60,9 @@ struct SplashView : View {
                                     self.opacity = 1.00
                                 }
                                 
-                            } // 1st on appear ends here
+                            }
                         
-                    }.padding() // vstack ends here
+                    }.padding()
                     
                     
                         .onAppear {
@@ -74,12 +74,11 @@ struct SplashView : View {
                                 
                             }
                             
-                        } // 2nd on appear ends here
+                        } 
                     
-                } // Zstack ends here
+                }
                 
-            } // end of the else
-            //    }
+            }
         }
     }
 

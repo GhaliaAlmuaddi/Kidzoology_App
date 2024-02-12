@@ -56,13 +56,13 @@ struct HomePageView: View {
                         
                     }
                         
-                        Text("             ") //Here
+                    .padding()
                         
                         
                         
                         NavigationLink {
                             
-                            //MyZoo view (Rahaf)
+                           
                            ZooView()
                             
                         }

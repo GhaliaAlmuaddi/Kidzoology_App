@@ -13,11 +13,8 @@ struct AnimalFactView: View {
     let animalinfo: Animals
     var body: some View {
         NavigationStack{
-            Text("")
-                       
-                           
-                       
-           
+            Color("backgroundColor")
+
                            .toolbar {
                                ToolbarItem(placement: .principal) {
                                        VStack {
@@ -54,7 +51,7 @@ struct AnimalFactView: View {
                                ToolbarItem(placement: .navigationBarLeading) {
                                    NavigationLink {
                                    
-                                                                        MapView()
+                                                                        animalsList()
                                    
                                                                 } label: {
                                    
@@ -80,56 +77,18 @@ struct AnimalFactView: View {
             ZStack{
                 
                 Color("backgroundColor").ignoresSafeArea()
-                //                Rectangle()
-                //                    .foregroundColor(.clear)
-                //                    .frame(width: 1353, height: 120)
-                //                    .background(Color(red: 0.95, green: 0.98, blue: 0.98))
-                VStack(spacing:-35){
-    
+               
+                VStack(spacing: -100){
+            Spacer()
                 
                     ZStack{
+                        
                         Rectangle()
                             .frame(width: 1116 , height: 530)
                             .cornerRadius(30)
                             .foregroundColor(.lightBackground)
-                        
-                        NavigationLink(destination: QuizView(selectedAnimal:animalinfo)){
-                            ZStack{
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(width: 310, height: 84)
-                                    .background(
-                                        LinearGradient(
-                                            stops: [
-                                                Gradient.Stop(color: Color(red: 1, green: 0.55, blue: 0.26), location: 0.00),
-                                                Gradient.Stop(color: Color(red: 0.95, green: 0.72, blue: 0.49).opacity(0.58), location: 1.00),
-                                            ],
-                                            startPoint: UnitPoint(x: 0.5, y: 0),
-                                            endPoint: UnitPoint(x: 0.66, y: -2.79)
-                                        )
-                                    )
-                                    .cornerRadius(50)
-                                    .shadow(color: .gray.opacity(0.25), radius: 2, x: 0, y: 4)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 50)
-                                            .stroke(Color(red: 0.96, green: 0.78, blue: 0.14), lineWidth: 0)
-                                        
-                                    )
-                                
-                                Text("Start the test")
-                                    .font(.system(size: 32)).bold()
-                                    .kerning(1.92)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(.white)
-                                    .frame(width: 319, alignment: .center)
-                            }/*.frame(width: 900 , height: 750 , alignment: .bottomTrailing)*/
-                            .padding([.top, .leading], 650)
-                        }.onDisappear {
-                            stopAudio()
-                        }
-                        
-                        
-                        
+                            
+                        VStack{
                         
                         ForEach(animals) { animal in
                             if(animal.animalName == animalinfo.animalName){
@@ -142,6 +101,7 @@ struct AnimalFactView: View {
                                         Text(animal.fact)
                                             .font(.system(size: 25))
                                             .foregroundColor(.brownText)
+                                            
                                         Button(action:{
                                             playSound(sound: animal.itSound)
                                         }){
@@ -151,8 +111,8 @@ struct AnimalFactView: View {
                                         }
                                         
                                     }
-                                    .padding(.top,100)
-                                    .padding(.leading,50)/*.frame(width: 500, height: 800 , alignment: .bottomLeading)*/
+                                    .frame(width: 470, height: 1000)
+                                    .padding(.leading,50)
                                     
                                     VStack{
                                         ZStack{
@@ -239,10 +199,39 @@ struct AnimalFactView: View {
                                                 .foregroundColor(.brownText)
                                                 .frame(width: 500 , height: 104, alignment: .trailing)
                                         }
-                                    }.padding(.trailing,50)//.frame(width: 1070 , alignment: .trailing)
+                                        NavigationLink(destination: QuizView(selectedAnimal:animalinfo)){
+                                            ZStack{
+                                                Rectangle()
+                                                    .foregroundColor(.clear)
+                                                    .frame(width: 310, height: 84)
+                                                    .background(Color.orangMap)
+                                                    .cornerRadius(50)
+                                                    .shadow(color: .gray.opacity(0.25), radius: 2, x: 0, y: 4)
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 50)
+                                                            .stroke(Color(red: 0.96, green: 0.78, blue: 0.14), lineWidth: 0)
+                                                        
+                                                    )
+                                                
+                                                Text("Start the test")
+                                                    .font(.system(size: 32)).bold()
+                                                    .kerning(1.92)
+                                                    .multilineTextAlignment(.center)
+                                                    .foregroundColor(.white)
+                                                    .frame(width: 319, alignment: .center)
+                                            }
+                                            .padding(.top, 95)
+                                        }.onDisappear {
+                                            stopAudio()
+                                        }
+                                    }.padding(.trailing,50)
+                                        
                                     
-                                }
-                            }}}
+                                }.padding(.top, 350)
+                            }}
+                        
+                        }.padding(.bottom, 150)
+                    }
                     
                     
                 }
@@ -256,8 +245,7 @@ struct AnimalFactView: View {
                 
           
             
-        }.navigationBarBackButtonHidden(true)
-    }
+        }.navigationBarBackButtonHidden(true)    }
 }
 
 

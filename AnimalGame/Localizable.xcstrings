@@ -13,9 +13,6 @@
     " " : {
 
     },
-    "             " : {
-
-    },
     " Animal Information" : {
 
     },
@@ -595,9 +592,6 @@
           }
         }
       }
-    },
-    "Hello, world!" : {
-
     },
     "Herbivore" : {
       "extractionState" : "manual",

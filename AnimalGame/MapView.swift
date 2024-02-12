@@ -14,15 +14,35 @@ struct MapView: View {
 
     
     var body: some View {
-      //  let Images = CurrentImageSelection2
+        NavigationStack{
+            Color("backgroundColor")
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink {
+                    
+                                                         HomePageView()
+                    
+                                                 } label: {
+                    
+                                                         Image(systemName: "arrow.backward")
+                                                             .resizable()
+                                                             .padding(.leading, 5.0)
+                                                             .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                    
+                  }.onDisappear {
+                      stopAudio()
+                  }
+                }
+            }
+        
         ZStack{
             Image("Map").resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 1288, height: 966)
+                
+                .frame(width: 1200, height: 900)
             
-         // Text("Welcome \(currentImage)") //
-
-         Image(currentImage+"1")
+            
+            
+            Image(currentImage+"1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 139, height: 174)
@@ -50,13 +70,14 @@ struct MapView: View {
                 .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                 .padding(.top, -80)
                 .padding(.trailing, 182)
-                //.offset(x: -90 , y: -50)
+              
                 
                 
             }
             
             
         }
+        }.navigationBarBackButtonHidden(true)
         
     }
 }
