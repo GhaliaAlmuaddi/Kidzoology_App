@@ -5,7 +5,6 @@
 //
 //  Created by Amal Abughazaleh on 24/01/2024.
 //
-
 import SwiftUI
 struct QuizView: View {
     @State var isButtonClicked = false
@@ -79,7 +78,7 @@ struct QuizView: View {
                     ZStack{
                         Rectangle()
                             .foregroundColor(.clear)
-                            .frame(width: 950, height: 600, alignment: .center)
+                            .frame(width: 950, height: 580, alignment: .center)
                             .background(Color(red: 0.95, green: 0.98, blue: 0.98))
                             .cornerRadius(30)
                         
@@ -89,7 +88,7 @@ struct QuizView: View {
                             
                             VStack(spacing:40){
                                 Text("1- \(selectedAnimal.ques1)")
-                                    .font(Font.system(size: 35))
+                                    .font(Font.system(size: 28))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
                                     .frame(width:900,  alignment: .topLeading)
@@ -218,7 +217,7 @@ struct QuizView: View {
                             
                             VStack(spacing:40){
                                 Text("2- \(selectedAnimal.ques2)")
-                                    .font(Font.system(size: 35))
+                                    .font(Font.system(size: 28))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
                                     .frame(width:900,  alignment: .topLeading)
@@ -361,16 +360,7 @@ struct QuizView: View {
                                 Rectangle()
                                     .foregroundColor(.clear)
                                     .frame(width: 310, height: 84)
-                                    .background(
-                                        LinearGradient(
-                                            stops: [
-                                                Gradient.Stop(color: Color(red: 1, green: 0.55, blue: 0.26), location: 0.00),
-                                                Gradient.Stop(color: Color(red: 0.95, green: 0.72, blue: 0.49).opacity(0.58), location: 1.00),
-                                            ],
-                                            startPoint: UnitPoint(x: 0.5, y: 0),
-                                            endPoint: UnitPoint(x: 0.66, y: -2.79)
-                                        )
-                                    )
+                                    .background(Color.orangMap )
                                     .cornerRadius(50)
                                     .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                                 
@@ -380,7 +370,7 @@ struct QuizView: View {
                                     .foregroundColor(.white)
                                 
                                 
-                            }
+                            }.padding(.bottom,20)
                         }.onDisappear {
                             stopAudio()
                         }

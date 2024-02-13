@@ -27,10 +27,7 @@ struct ZooView: View {
         NavigationStack{
         
             Text("")
-                       
-                       
-                           
-                           .toolbar {
+    .toolbar {
                                ToolbarItem(placement: .principal) {
                                        VStack {
                                            Text("My Zoo")
@@ -69,7 +66,7 @@ struct ZooView: View {
                                        ZStack{
                                            Rectangle()
                                                .foregroundColor(.clear)
-                                               .frame(width: 180, height: 50)
+                                               .frame(width: 180, height: 40)
                                                .background(Color(red: 0.75, green: 0.87, blue: 0.73))
                                                .cornerRadius(50)
                                            HStack{
@@ -78,14 +75,13 @@ struct ZooView: View {
                                                
                                                Image(currentImage)
                                                    .resizable()
-                                                   .frame(width: 56, height: 50)
-                                               Spacer()
-                                               Text(Currentname)
-                                                   .font(Font.custom("Inter", size: 20))
-                                                   .lineSpacing(22)
+                                                   .frame(width: 40, height: 38).multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                                                                            Text(Currentname)
+                                                   .font(Font.custom("Inter", size: 15)).multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                                  .lineSpacing(22)
                                                    .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                            }
-                                           .padding()
+                                           .padding(.horizontal,20)
                                        }
                                        .padding(.bottom, 10)
      
@@ -107,7 +103,7 @@ struct ZooView: View {
             ZStack{
                 Image("zoo")
                     .resizable()
-                    .frame(width: 1200, height: 840)
+                    .frame(width: 1200, height: 760)
                 VStack(spacing: -10){
                    
                     Spacer()
@@ -125,7 +121,7 @@ struct ZooView: View {
                         .padding()
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 10) {
+                            HStack(spacing: 8) {
                                 ForEach(OwnAnimal, id: \.self) { animal in
                                     VStack {
                                         if (animal.Animal_drag == false){
@@ -133,16 +129,14 @@ struct ZooView: View {
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fit)
                                             
-                                                .frame(width: 100, height: 100)
+                                                .frame(width: 100, height: 150)
                                                 .draggable(Image(animal.animal_image))
                                             
                                         }
-                                    }
+                                    }.padding(.top,70)
                                     
                                     
                                 }}
-                            
-                            
                         }
                         .padding()
                     }
@@ -153,22 +147,21 @@ struct ZooView: View {
                 
                 
                 ForEach(OwnAnimal, id: \.self) { animal in
-                    if animal.animal_name == "Camel" {
-                        
+                 //   if animal.animal_name == "Camel" {
+                    let Pos_x = CGFloat(animal.posx)
+                    let Pos_y = CGFloat(animal.posy)
                         if animal.Animal_drag == true
                         {
                             Image(animal.animal_image).resizable()
                                 .scaledToFit()
                                 .frame(width: 80, height: 80)
-                                .position(x: 327, y: 271)
+                                .position(x: Pos_x, y: Pos_y)
                             
                         }
                         else {
                             Circle()
-                                .fill(Color.c1)
-                                .frame(width: 100, height: 100)
-                            
-                                .position(x : 327, y: 271)
+                                .fill(Color.white).opacity(0.4)
+                                .frame(width: 100, height: 100).position(x: Pos_x, y: Pos_y)
                                 .onDrop(of: ["public.image"], isTargeted: nil) { providers, location in
                                     
                                     guard let provider = providers.first else {
@@ -180,14 +173,14 @@ struct ZooView: View {
                                             if let image = image as? UIImage {
                                                
                                                 let droppedImage = Image(uiImage: image)
-                                                                                                 droppedImages["Camel"] = droppedImage
+                                                droppedImages[animal.animal_image] = droppedImage
                                               
                                             }else{
                                                 
                                                 
                                                 
                                                 withAnimation(Animation.easeInOut(duration: 0.2)) {
-                                                    droppedImages["Camel"] = nil
+                                                    droppedImages[animal.animal_image] = nil
                                                 }
                                             }
                                             
@@ -200,19 +193,18 @@ struct ZooView: View {
                                 }
                                 .overlay(
                                     
-                                    droppedImages["Camel"].map {
+                                    droppedImages[animal.animal_image].map {
                                         $0.resizable()
                                             .scaledToFit()
                                             .frame(width: 80, height: 80)
-                                            .position(x: 327, y: 271)
+                                            .position(x: Pos_x, y: Pos_y)
                                         
                                     }
-                                    
-                                    
+  
                                 )
                         }
                         
-                    }
+                  //  }
                 }
             }
         }.navigationBarBackButtonHidden(true)

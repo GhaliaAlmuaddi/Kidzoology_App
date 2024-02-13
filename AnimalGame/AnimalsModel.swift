@@ -24,8 +24,8 @@ struct Animals: Identifiable {
     var answer2: String
     var factSound: String
     var itSound: String
-    var posx : CGFloat
-    var posy : CGFloat
+    var posx : Double
+    var posy : Double
     var Animal_drag : Bool
     
 }

@@ -86,7 +86,7 @@ struct sucessMassage: View {
 
         }    }
     func save () {
-        let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, level: "g", animal_energy: "g", posx: rewardAnimal.posx , posy: rewardAnimal.posy , Animal_drag: rewardAnimal.Animal_drag)
+        let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, posx: rewardAnimal.posx , posy: rewardAnimal.posy , Animal_drag: rewardAnimal.Animal_drag)
 
         context.insert(Own_animal)
  
