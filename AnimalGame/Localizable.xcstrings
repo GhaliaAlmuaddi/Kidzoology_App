@@ -16,11 +16,28 @@
     " Animal Information" : {
 
     },
-    "1- %@" : {
+    "%@" : {
 
     },
-    "2- %@" : {
-
+    "1-" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-١"
+          }
+        }
+      }
+    },
+    "2-" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-٢"
+          }
+        }
+      }
     },
     "9 Hours" : {
       "comment" : "Choice 2 for question 2",

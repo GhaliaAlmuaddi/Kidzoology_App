@@ -87,12 +87,15 @@ struct QuizView: View {
                             
                             
                             VStack(spacing:40){
-                                Text("1- \(selectedAnimal.ques1)")
-                                    .font(Font.system(size: 28))
-                                    .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                                
-                                    .frame(width:900,  alignment: .topLeading)
-                                
+                                HStack{
+                                    Text("1-")
+                                    Text("\(selectedAnimal.ques1)")
+                                       
+                                }
+                                .font(Font.system(size: 28))
+                                .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
+                            
+                                .frame(width:900,  alignment: .topLeading)
                                 
                                 HStack(spacing:100){
                                     Button {
@@ -216,8 +219,11 @@ struct QuizView: View {
                             
                             
                             VStack(spacing:40){
-                                Text("2- \(selectedAnimal.ques2)")
-                                    .font(Font.system(size: 28))
+                                HStack{
+                                    Text("2-")
+                                    Text("\(selectedAnimal.ques2)")
+                                        
+                                }.font(Font.system(size: 28))
                                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
                                 
                                     .frame(width:900,  alignment: .topLeading)
