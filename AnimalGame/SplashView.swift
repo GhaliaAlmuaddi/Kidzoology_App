@@ -17,15 +17,15 @@ struct SplashView : View {
     
     @AppStorage("Kid_name") var Currentname : String?
     @AppStorage("imageKid") var currentImage: String?
-   
+    
     
     
     
     var body: some View {
         
-       
+        
         if isActive {
-            //  NavigationStack {
+         
             if let _ = Currentname , let _ = currentImage {
                 HomePageView()
             }
@@ -33,52 +33,53 @@ struct SplashView : View {
                 NameView()
             }
             
-            // }
+            
         } else {
+            
+            ZStack{
+                Color("backgroundColor")
+                    .edgesIgnoringSafeArea(.all)
                 
-                ZStack{
-                    Color("backgroundColor")
-                        .edgesIgnoringSafeArea(.all)
+                VStack{
                     
-                    VStack{
+                    Image("applogo")
+                        .resizable()
+                        .scaledToFit().frame(width: 8000,height: 1000)
+                        .padding(.top,300)
+                        .padding(.trailing,300)
+                    
                         
-                        Image("applogo")
-                            .resizable()
-                            .scaledToFit()
-                            .offset(x:-150,y:156)
-                            .frame(width: 6000,height: 1000)
-                                        
-                            .scaleEffect(size)
-                            .opacity(opacity)
-                            .onAppear{
-                                withAnimation(.easeIn(duration: 1.1)){
-                                    self.size = 1.0
-                                    self.opacity = 1.00
-                                }
-                                
+                    
+                        .scaleEffect(size)
+                        .opacity(opacity)
+                        .onAppear{
+                            withAnimation(.easeIn(duration: 1.1)){
+                                self.size = 1.0
+                                self.opacity = 1.00
                             }
-                        
-                    }.padding()
+                            
+                        }
                     
-                    
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                                withAnimation {
-                                    self.isActive = true
-                                    
-                                }
+                }.padding(.horizontal)
+                
+                
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            withAnimation {
+                                self.isActive = true
                                 
                             }
                             
-                        } 
-                    
-                }
+                        }
+                        
+                    }
                 
             }
+            
         }
     }
-
-                 
+    
+}
 
 
 
