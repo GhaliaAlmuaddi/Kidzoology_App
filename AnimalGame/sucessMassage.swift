@@ -16,6 +16,7 @@ struct sucessMassage: View {
     @Environment(\.dismiss) var dismiss
     @State private var isSaved: Bool = false
     var body: some View {
+        NavigationStack{
         ZStack{
             
             Color("backgroundColor")
@@ -72,19 +73,21 @@ struct sucessMassage: View {
                         .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                         .padding(.top, 50)
                     
- 
+                    
                 }
-             
+                
             }
             
-
-        
+            
+            
             if isSaved {
                 ZooView()
-   
+                
             }
-
-        }    }
+            
+        }
+    }.navigationBarBackButtonHidden(true)
+    }
     func save () {
         let Own_animal = Kid_animal(animal_name: rewardAnimal.animalName , animal_image: rewardAnimal.animalImage, posx: rewardAnimal.posx , posy: rewardAnimal.posy , Animal_drag: rewardAnimal.Animal_drag)
 

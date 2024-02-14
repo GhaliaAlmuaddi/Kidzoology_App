@@ -26,7 +26,7 @@ struct ZooView: View {
     var body: some View {
         NavigationStack{
         
-            Text("")
+            Color("backgroundColor")
     .toolbar {
                                ToolbarItem(placement: .principal) {
                                        VStack {
