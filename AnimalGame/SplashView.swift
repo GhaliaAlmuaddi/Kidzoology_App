@@ -23,19 +23,18 @@ struct SplashView : View {
     
     var body: some View {
         
-        
-        
-            
+       
         if isActive {
-            NavigationStack {
-                if let _ = Currentname , let _ = currentImage {
-                    HomePageView()
-                }
-                else {
-                    NameView()
-                }
-                
-            }} else {
+            //  NavigationStack {
+            if let _ = Currentname , let _ = currentImage {
+                HomePageView()
+            }
+            else {
+                NameView()
+            }
+            
+            // }
+        } else {
                 
                 ZStack{
                     Color("backgroundColor")
@@ -48,10 +47,7 @@ struct SplashView : View {
                             .scaledToFit()
                             .offset(x:-150,y:156)
                             .frame(width: 6000,height: 1000)
-                        
-                        
-                        
-                      
+                                        
                             .scaleEffect(size)
                             .opacity(opacity)
                             .onAppear{

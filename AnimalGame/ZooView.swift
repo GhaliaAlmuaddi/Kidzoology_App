@@ -121,7 +121,7 @@ struct ZooView: View {
                         .padding()
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 8) {
+                            HStack(spacing: 16) {
                                 ForEach(OwnAnimal, id: \.self) { animal in
                                     VStack {
                                         if (animal.Animal_drag == false){

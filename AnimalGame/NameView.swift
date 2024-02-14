@@ -34,8 +34,10 @@ struct NameView: View {
                 
                 
                 
-                TextField("", text: $Currentname, prompt: Text("")).frame(width: 409, height: 80)
+                TextField("", text: $Currentname, prompt: Text("")).foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09)).frame(width: 409, height: 80)
                     .background(Color(red: 0.98, green: 0.98, blue: 0.98))
+                
+              
                 
                     .cornerRadius(30).overlay(
                         RoundedRectangle(cornerRadius: 30)

@@ -220,7 +220,7 @@ struct AnimalFactView: View {
                                                     .foregroundColor(.white)
                                                     .frame(width: 319, alignment: .center)
                                             }
-                                            .padding(.top, 95)
+                                            .padding(.top, 80)
                                         }.onDisappear {
                                             stopAudio()
                                         }

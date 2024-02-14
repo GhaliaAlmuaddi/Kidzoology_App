@@ -58,7 +58,7 @@ struct sucessMassage: View {
                     .font(.system(size: 30))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
-                    .frame(width: 510, height: 39, alignment: .top)
+                    .frame(width: 600, height: 39, alignment: .top)
                 
                 Button(action: {
                     save()
