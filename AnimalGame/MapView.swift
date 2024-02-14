@@ -46,6 +46,7 @@ struct MapView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 139, height: 174)
+//                .padding(.trailing, 60)
                 .clipped()
             
             ZStack{
@@ -53,7 +54,7 @@ struct MapView: View {
                     .fill(.orangMap)
                     .frame(width: 36, height: 47)
                     .padding(.top, -73)
-                    .padding(.trailing, 16)
+                    .padding(.trailing, 92)
                 
                 NavigationLink {
                     animalsList()
@@ -69,7 +70,7 @@ struct MapView: View {
                 .cornerRadius(50)
                 .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                 .padding(.top, -80)
-                .padding(.trailing, 182)
+                .padding(.trailing, 260)
               
                 
                 
