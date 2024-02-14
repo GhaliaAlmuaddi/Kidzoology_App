@@ -69,6 +69,7 @@
 		3990E3152B6CEB2700D51966 /* HawkSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E3082B6CEB2700D51966 /* HawkSound_ar.mp3 */; };
 		3990E3162B6CEB2700D51966 /* HorseSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E3092B6CEB2700D51966 /* HorseSound_ar.mp3 */; };
 		3990E3172B6CEB2700D51966 /* CamelSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3990E30A2B6CEB2700D51966 /* CamelSound_ar.mp3 */; };
+		399832E82B7D0AEE00538193 /* ZooSound_ar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 399832E72B7D0AEE00538193 /* ZooSound_ar.mp3 */; };
 		39997D392B6BD3A700229918 /* QuizSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39997D382B6BD3A700229918 /* QuizSound.mp3 */; };
 		39997D3B2B6BD3C800229918 /* AnimalsListSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39997D3A2B6BD3C800229918 /* AnimalsListSound.mp3 */; };
 		39997D3D2B6BD40900229918 /* ZooSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39997D3C2B6BD40900229918 /* ZooSound.mp3 */; };
@@ -153,13 +154,13 @@
 		3990E3082B6CEB2700D51966 /* HawkSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HawkSound_ar.mp3; sourceTree = "<group>"; };
 		3990E3092B6CEB2700D51966 /* HorseSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HorseSound_ar.mp3; sourceTree = "<group>"; };
 		3990E30A2B6CEB2700D51966 /* CamelSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CamelSound_ar.mp3; sourceTree = "<group>"; };
+		399832E72B7D0AEE00538193 /* ZooSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZooSound_ar.mp3; sourceTree = "<group>"; };
 		39997D382B6BD3A700229918 /* QuizSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QuizSound.mp3; sourceTree = "<group>"; };
 		39997D3A2B6BD3C800229918 /* AnimalsListSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnimalsListSound.mp3; sourceTree = "<group>"; };
 		39997D3C2B6BD40900229918 /* ZooSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZooSound.mp3; sourceTree = "<group>"; };
 		39997D3E2B6BD81D00229918 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		39997D432B6BD90100229918 /* QuizSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QuizSound_ar.mp3; sourceTree = "<group>"; };
 		39997D452B6BD93E00229918 /* AnimalsListSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnimalsListSound_ar.mp3; sourceTree = "<group>"; };
-		39997D472B6BDDFC00229918 /* ZooSound_ar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZooSound_ar.mp3; sourceTree = "<group>"; };
 		39BD995E2B6E3F39002D58E5 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		39CCBB632B66225300CE544C /* animalListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalListCard.swift; sourceTree = "<group>"; };
 		39CCBB652B66229500CE544C /* animalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalsList.swift; sourceTree = "<group>"; };
@@ -287,11 +288,11 @@
 			isa = PBXGroup;
 			children = (
 				39997D452B6BD93E00229918 /* AnimalsListSound_ar.mp3 */,
-				39997D472B6BDDFC00229918 /* ZooSound_ar.mp3 */,
 				39997D432B6BD90100229918 /* QuizSound_ar.mp3 */,
 				39997D382B6BD3A700229918 /* QuizSound.mp3 */,
 				39997D3A2B6BD3C800229918 /* AnimalsListSound.mp3 */,
 				39997D3C2B6BD40900229918 /* ZooSound.mp3 */,
+				399832E72B7D0AEE00538193 /* ZooSound_ar.mp3 */,
 			);
 			path = EnglishPageSound;
 			sourceTree = "<group>";
@@ -450,6 +451,7 @@
 				3990E3112B6CEB2700D51966 /* DogSound_ar.mp3 in Resources */,
 				18EE747C2B6BFE750048E68B /* HorseFacts_ar.mp3 in Resources */,
 				18EE747E2B6BFE750048E68B /* BirdFacts_ar.mp3 in Resources */,
+				399832E82B7D0AEE00538193 /* ZooSound_ar.mp3 in Resources */,
 				182EB7512B6A441A0023046C /* PigeonFacts.mp3 in Resources */,
 				182EB74D2B6A441A0023046C /* CamelFacts.mp3 in Resources */,
 				182EB76F2B6A49530023046C /* CatSound.mp3 in Resources */,
