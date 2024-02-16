@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HomePageView: View {
     @AppStorage("Kid_name") var Currentname : String = ""
-    
+   
+
     
     var body: some View {
         NavigationStack {
@@ -17,12 +18,20 @@ struct HomePageView: View {
                 Color("backgroundColor").ignoresSafeArea()
                 
                 VStack {
-                    Text("Welcome \(Currentname)")
-                        .font(
+                    HStack {
+                        Text("Welcome ")
+                            .font(
+                                Font.system(size: 44)
+                                    .weight(.medium)
+                            )
+                            .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
+                        
+                        Text("\(Currentname)").font(
                             Font.system(size: 44)
                                 .weight(.medium)
                         )
                         .foregroundColor(Color(red: 0.49, green: 0.32, blue: 0.09))
+                    }
                     HStack {
                         
                         NavigationLink {

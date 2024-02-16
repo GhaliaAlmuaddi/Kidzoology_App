@@ -1155,7 +1155,18 @@
         }
       }
     },
+    "Welcome " : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحبا "
+          }
+        }
+      }
+    },
     "Welcome %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {

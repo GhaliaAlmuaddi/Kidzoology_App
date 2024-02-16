@@ -25,63 +25,59 @@ struct SplashView : View {
         
         
         if isActive {
-         
-            if let _ = Currentname , let _ = currentImage {
-                HomePageView()
+            NavigationStack{
+                if let _ = Currentname , let _ = currentImage {
+                    HomePageView()
+                }
+                else {
+                    NameView() }
             }
+        }
+            
             else {
-                NameView()
-            }
-            
-            
-        } else {
-            
-            ZStack{
-                Color("backgroundColor")
-                    .edgesIgnoringSafeArea(.all)
                 
-                VStack{
+                ZStack{
+                    Color("backgroundColor")
+                        .ignoresSafeArea()
                     
-                    Image("applogo")
-                        .resizable()
-                        .scaledToFit().frame(width: 8000,height: 1000)
-                        .padding(.top,300)
-                        .padding(.trailing,300)
-                    
-                        
-                    
-                        .scaleEffect(size)
-                        .opacity(opacity)
-                        .onAppear{
-                            withAnimation(.easeIn(duration: 1.1)){
-                                self.size = 1.0
-                                self.opacity = 1.00
+                    HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
+                       
+                        Image("applogo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: CGFloat(900), height: CGFloat(750))
+                          
+                    }
+                    .padding()
+                            .scaleEffect(size)
+                            .opacity(opacity)
+                            .onAppear{
+                                withAnimation(.easeIn(duration: 1.1)){
+                                    self.size = 1.0
+                                    self.opacity = 1.00
+                                }
+                                
                             }
-                            
-                        }
-                    
-                }.padding(.horizontal)
-                
-                
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                            withAnimation {
-                                self.isActive = true
+                }
+
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                                withAnimation {
+                                    self.isActive = true
+                                    
+                                }
                                 
                             }
                             
                         }
-                        
-                    }
+                    
+                }
                 
             }
-            
         }
-    }
+        
+        
     
-}
-
-
 
  #Preview {
      SplashView()
