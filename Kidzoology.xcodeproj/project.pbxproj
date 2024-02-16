@@ -83,10 +83,9 @@
 		90BC255E2B652F7E0069186A /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255D2B652F7E0069186A /* NameView.swift */; };
 		90BC25602B652FC60069186A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC255F2B652FC60069186A /* HomePageView.swift */; };
 		90BC25622B65301C0069186A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25612B65301C0069186A /* MapView.swift */; };
-		90BC25662B65314D0069186A /* RahafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25652B65314D0069186A /* RahafView.swift */; };
 		90BC25682B65317F0069186A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25672B65317F0069186A /* Model.swift */; };
 		90BC256A2B6532030069186A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC25692B6532030069186A /* SplashView.swift */; };
-		EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */; };
+		EE122E4F2B5F9C70009FAACD /* KidzoologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE122E4E2B5F9C70009FAACD /* KidzoologyApp.swift */; };
 		EE122E532B5F9C71009FAACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE122E522B5F9C71009FAACD /* Assets.xcassets */; };
 		EE122E562B5F9C71009FAACD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE122E552B5F9C71009FAACD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -168,11 +167,10 @@
 		90BC255D2B652F7E0069186A /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		90BC255F2B652FC60069186A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		90BC25612B65301C0069186A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		90BC25652B65314D0069186A /* RahafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahafView.swift; sourceTree = "<group>"; };
 		90BC25672B65317F0069186A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		90BC25692B6532030069186A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		EE122E4B2B5F9C70009FAACD /* AnimalGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGameApp.swift; sourceTree = "<group>"; };
+		EE122E4B2B5F9C70009FAACD /* Kidzoology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kidzoology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE122E4E2B5F9C70009FAACD /* KidzoologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidzoologyApp.swift; sourceTree = "<group>"; };
 		EE122E522B5F9C71009FAACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE122E552B5F9C71009FAACD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,7 +298,7 @@
 		EE122E422B5F9C70009FAACD = {
 			isa = PBXGroup;
 			children = (
-				EE122E4D2B5F9C70009FAACD /* AnimalGame */,
+				EE122E4D2B5F9C70009FAACD /* Kidzoology */,
 				EE122E4C2B5F9C70009FAACD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -308,12 +306,12 @@
 		EE122E4C2B5F9C70009FAACD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE122E4B2B5F9C70009FAACD /* AnimalGame.app */,
+				EE122E4B2B5F9C70009FAACD /* Kidzoology.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE122E4D2B5F9C70009FAACD /* AnimalGame */ = {
+		EE122E4D2B5F9C70009FAACD /* Kidzoology */ = {
 			isa = PBXGroup;
 			children = (
 				39997D3E2B6BD81D00229918 /* Localizable.xcstrings */,
@@ -321,7 +319,7 @@
 				39CCBB632B66225300CE544C /* animalListCard.swift */,
 				39CCBB652B66229500CE544C /* animalsList.swift */,
 				39796E252B663E0C00C35D57 /* sucessMassage.swift */,
-				EE122E4E2B5F9C70009FAACD /* AnimalGameApp.swift */,
+				EE122E4E2B5F9C70009FAACD /* KidzoologyApp.swift */,
 				90BC25692B6532030069186A /* SplashView.swift */,
 				18FECEDB2B62584E001B566F /* AnimalFactView.swift */,
 				90BC255B2B652F3F0069186A /* CharactersView.swift */,
@@ -329,7 +327,6 @@
 				90BC255F2B652FC60069186A /* HomePageView.swift */,
 				90BC25612B65301C0069186A /* MapView.swift */,
 				39BD995E2B6E3F39002D58E5 /* Triangle.swift */,
-				90BC25652B65314D0069186A /* RahafView.swift */,
 				3990BEF52B7026DA00225347 /* ZooView.swift */,
 				18FECEC72B60FC38001B566F /* AnimalsModel.swift */,
 				90BC25672B65317F0069186A /* Model.swift */,
@@ -338,7 +335,7 @@
 				EE122E522B5F9C71009FAACD /* Assets.xcassets */,
 				EE122E542B5F9C71009FAACD /* Preview Content */,
 			);
-			path = AnimalGame;
+			path = Kidzoology;
 			sourceTree = "<group>";
 		};
 		EE122E542B5F9C71009FAACD /* Preview Content */ = {
@@ -352,9 +349,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE122E4A2B5F9C70009FAACD /* AnimalGame */ = {
+		EE122E4A2B5F9C70009FAACD /* Kidzoology */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE122E592B5F9C71009FAACD /* Build configuration list for PBXNativeTarget "AnimalGame" */;
+			buildConfigurationList = EE122E592B5F9C71009FAACD /* Build configuration list for PBXNativeTarget "Kidzoology" */;
 			buildPhases = (
 				EE122E472B5F9C70009FAACD /* Sources */,
 				EE122E482B5F9C70009FAACD /* Frameworks */,
@@ -364,9 +361,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimalGame;
+			name = Kidzoology;
 			productName = AnimalGame;
-			productReference = EE122E4B2B5F9C70009FAACD /* AnimalGame.app */;
+			productReference = EE122E4B2B5F9C70009FAACD /* Kidzoology.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -384,7 +381,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE122E462B5F9C70009FAACD /* Build configuration list for PBXProject "AnimalGame" */;
+			buildConfigurationList = EE122E462B5F9C70009FAACD /* Build configuration list for PBXProject "Kidzoology" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -398,7 +395,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE122E4A2B5F9C70009FAACD /* AnimalGame */,
+				EE122E4A2B5F9C70009FAACD /* Kidzoology */,
 			);
 		};
 /* End PBXProject section */
@@ -491,9 +488,8 @@
 				90BC255E2B652F7E0069186A /* NameView.swift in Sources */,
 				90BC255C2B652F3F0069186A /* CharactersView.swift in Sources */,
 				18FECEC82B60FC38001B566F /* AnimalsModel.swift in Sources */,
-				EE122E4F2B5F9C70009FAACD /* AnimalGameApp.swift in Sources */,
+				EE122E4F2B5F9C70009FAACD /* KidzoologyApp.swift in Sources */,
 				90BC256A2B6532030069186A /* SplashView.swift in Sources */,
-				90BC25662B65314D0069186A /* RahafView.swift in Sources */,
 				3990BEF62B7026DA00225347 /* ZooView.swift in Sources */,
 				182EB71F2B6A344F0023046C /* SoundsModel.swift in Sources */,
 				39CCBB662B66229500CE544C /* animalsList.swift in Sources */,
@@ -632,26 +628,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kidzoology/Preview Content\"";
 				DEVELOPMENT_TEAM = 2S786LTF49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kidzoology;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame.Team2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twq.Kidzoology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -662,33 +661,36 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimalGame/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kidzoology/Preview Content\"";
 				DEVELOPMENT_TEAM = 2S786LTF49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kidzoology;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = R.AnimalGame.Team2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twq.Kidzoology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE122E462B5F9C70009FAACD /* Build configuration list for PBXProject "AnimalGame" */ = {
+		EE122E462B5F9C70009FAACD /* Build configuration list for PBXProject "Kidzoology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE122E572B5F9C71009FAACD /* Debug */,
@@ -697,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE122E592B5F9C71009FAACD /* Build configuration list for PBXNativeTarget "AnimalGame" */ = {
+		EE122E592B5F9C71009FAACD /* Build configuration list for PBXNativeTarget "Kidzoology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE122E5A2B5F9C71009FAACD /* Debug */,

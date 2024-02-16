@@ -406,6 +406,7 @@
       }
     },
     "Drag your animals into your zoo" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {

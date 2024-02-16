@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE122E4A2B5F9C70009FAACD"
-               BuildableName = "AnimalGame.app"
-               BlueprintName = "AnimalGame"
-               ReferencedContainer = "container:AnimalGame.xcodeproj">
+               BuildableName = "Kidzoology.app"
+               BlueprintName = "Kidzoology"
+               ReferencedContainer = "container:Kidzoology.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE122E4A2B5F9C70009FAACD"
-            BuildableName = "AnimalGame.app"
-            BlueprintName = "AnimalGame"
-            ReferencedContainer = "container:AnimalGame.xcodeproj">
+            BuildableName = "Kidzoology.app"
+            BlueprintName = "Kidzoology"
+            ReferencedContainer = "container:Kidzoology.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE122E4A2B5F9C70009FAACD"
-            BuildableName = "AnimalGame.app"
-            BlueprintName = "AnimalGame"
-            ReferencedContainer = "container:AnimalGame.xcodeproj">
+            BuildableName = "Kidzoology.app"
+            BlueprintName = "Kidzoology"
+            ReferencedContainer = "container:Kidzoology.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

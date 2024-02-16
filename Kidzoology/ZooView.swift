@@ -103,7 +103,7 @@ struct ZooView: View {
             ZStack{
                 Image("zoo")
                     .resizable()
-                    .frame(width: 1200, height: 760)
+                    .frame(width: 1200, height: 772)
                 VStack(spacing: -10){
                    
                     Spacer()
@@ -121,7 +121,7 @@ struct ZooView: View {
                         .padding()
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 16) {
+                            HStack {
                                 ForEach(OwnAnimal, id: \.self) { animal in
                                     VStack {
                                         if (animal.Animal_drag == false){
@@ -129,7 +129,7 @@ struct ZooView: View {
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fit)
                                             
-                                                .frame(width: 100, height: 150)
+                                                .frame(width: 100, height: 150).padding(35)
                                                 .draggable(Image(animal.animal_image))
                                             
                                         }

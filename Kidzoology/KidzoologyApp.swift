@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct AnimalGameApp: App {
+struct KidzoologyApp: App {
     var body: some Scene {
         WindowGroup { 
             SplashView()
