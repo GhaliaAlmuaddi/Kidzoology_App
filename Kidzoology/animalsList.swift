@@ -77,7 +77,7 @@ struct animalsList: View {
         ZStack{
             Color("backgroundColor")
                 .ignoresSafeArea()
-            VStack(spacing: 100){
+            VStack(spacing: 200){
                 
                 Spacer()
                 ScrollView(.horizontal){

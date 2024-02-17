@@ -26,7 +26,7 @@ struct ZooView: View {
     var body: some View {
         NavigationStack{
         
-            Color("backgroundColor")
+            Text("")
     .toolbar {
                                ToolbarItem(placement: .principal) {
                                        VStack {
@@ -103,7 +103,7 @@ struct ZooView: View {
             ZStack{
                 Image("zoo")
                     .resizable()
-                    .frame(width: 1200, height: 772)
+                    .background(Color("grayback"))
                 VStack(spacing: -10){
                    
                     Spacer()

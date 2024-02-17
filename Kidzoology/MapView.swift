@@ -16,29 +16,45 @@ struct MapView: View {
     var body: some View {
         NavigationStack{
             Color("backgroundColor")
-            .toolbar{
-                ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink {
-                    
-                                                         HomePageView()
-                    
-                                                 } label: {
-                    
-                                                         Image(systemName: "arrow.backward")
-                                                             .resizable()
-                                                             .padding(.leading, 5.0)
-                                                             .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
-                    
-                  }.onDisappear {
-                      stopAudio()
-                  }
-                }
+            Text("")
+                        .toolbar{
+                            ToolbarItem(placement: .principal) {
+                                    VStack {
+                                        Text("Map")
+                                            .bold()
+                                            .foregroundColor(.brownText)
+                                    }
+                                }
+                            ToolbarItem(placement: .navigationBarLeading) {
+                                NavigationLink {
+                                
+                                                                     HomePageView()
+                                
+                                                             } label: {
+                                
+                                                                     Image(systemName: "arrow.backward")
+                                                                         .resizable()
+                                                                         .padding(.leading, 5.0)
+                                                                         .frame(width: 45 , height: 35).foregroundColor(Color(red: 1, green: 0.55, blue: 0.26))
+                                
+                              }.onDisappear {
+                                  stopAudio()
+                              }
+                            }
+                        }
+                        .toolbarBackground(
+
+                            
+                            Color.lightBackground,
+                            
+                            for: .navigationBar)
+                        .toolbarBackground(.visible, for: .navigationBar)
+                        .navigationBarTitleDisplayMode(.inline)
             }
         
         ZStack{
-            Image("Map").resizable()
+            Image("Map").resizable().scaledToFill()
                 
-                .frame(width: 1200, height: 900)
             
             
             
@@ -77,11 +93,11 @@ struct MapView: View {
             }
             
             
-        }
         }.navigationBarBackButtonHidden(true)
+        }
         
     }
-}
+
 #Preview {
     MapView()
 }
